@@ -367,10 +367,16 @@ input:focus {
 
 .vintka {
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .vintka1 {
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .imgvin1 {
