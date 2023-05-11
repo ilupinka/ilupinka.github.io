@@ -21,6 +21,10 @@ body {
 	justify-content: space-around;
 }
 
+.kisslogo {
+	width: 100%;
+}
+
 .nav {
 	display: inline-block;
 	width: 33%;
@@ -134,6 +138,7 @@ body {
 .bird-image {
 	margin-top: 10%;
 	float: right;
+	width: 40%;
 }
 
 .header-button {
