@@ -361,8 +361,8 @@ input:focus {
 .imgvin {
 	width: 30%;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+	display: block;
+	margin: auto;
 }
 
 .vintka {
@@ -377,8 +377,8 @@ input:focus {
 	width: 30%;
 	margin-top: 3%;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+	display: block;
+	margin: auto;
 }
 
 .slider2 {
