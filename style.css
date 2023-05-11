@@ -96,6 +96,7 @@ body {
 .map-img {
 	display: flex;
 	align-items: right;
+	width: 100%;
 
 	transition: background-color 0.3s linear;
 	transition: all 1s ease;
