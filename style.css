@@ -416,6 +416,10 @@ input:focus {
 	margin-top: 50%;
 }
 
+.white-jpg {
+	width: 75%;
+}
+
 .h62 {
 	position: flex;
 	margin-left: 5%;
@@ -436,6 +440,10 @@ input:focus {
 	width: 15%;
 	margin-right: 75%;
 	margin-top: 50%;
+}
+
+.loft-jpg {
+	width: 75%;
 }
 
 .h63 {
