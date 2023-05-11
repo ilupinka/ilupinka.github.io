@@ -394,6 +394,10 @@ input:focus {
     position: relative;
 }
 
+.intst {
+	text-align: center;
+}
+
 .h61 {
 	position: flex;
 	margin-left: 5%;
