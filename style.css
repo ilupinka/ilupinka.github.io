@@ -444,6 +444,10 @@ input:focus {
 	margin-top: -22%;
 }
 
+.grim-jpg {
+	width: 75%;
+}
+
 .grimtitle {
 	font-size: 1.3vw;
 	position: absolute;
