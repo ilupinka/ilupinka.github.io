@@ -343,13 +343,30 @@ input:focus {
 	width: 33%;
 }
 
+.premium {
+	text-align: center;
+	width: 100%;
+}
+
+.maxi {
+	text-align: center;
+	width: 100%;
+}
+
+.standart {
+	text-align: center;
+	width: 100%;
+}
+
 .imgvin {
 	width: 30%;
+	text-align: center;
 }
 
 .imgvin1 {
 	width: 30%;
 	margin-top: 3%;
+	text-align: center;
 }
 
 .slider2 {
