@@ -414,9 +414,10 @@ input:focus {
 }
 
 .slider2 {
-    width: 57%;
-    text-align: center;
-    overflow: hidden;
+    	width: 57%;
+	height: 65vh;
+    	text-align: center;
+    	overflow: hidden;
 	position: center;
 	margin-left: 23%;
 }
