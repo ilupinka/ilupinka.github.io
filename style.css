@@ -434,7 +434,6 @@ input:focus {
 }
 
 .slides2 {
-	resize: 25%;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
