@@ -59,7 +59,6 @@ body {
 
 .phone-img {
 	display: flex;
-	align-items: right;
 	width: 3vw;
 	
 	transition: background-color 0.3s linear;
@@ -72,7 +71,6 @@ body {
 
 .email-img {
 	display: flex;
-	align-items: right;
 	width: 3vw;
 	
 	transition: background-color 0.3s linear;
@@ -85,7 +83,6 @@ body {
 
 .telegram-img {
 	display: flex;
-	align-items: right;
 	width: 3vw;
 	
 	transition: background-color 0.3s linear;
@@ -98,7 +95,6 @@ body {
 
 .vk-img {
 	display: flex;
-	align-items: right;
 	width: 3vw;
 	
 	transition: background-color 0.3s linear;
@@ -111,7 +107,6 @@ body {
 
 .map-img {
 	display: flex;
-	align-items: right;
 	width: 3vw;
 
 	transition: background-color 0.3s linear;
@@ -123,7 +118,6 @@ body {
 }
 
 .header-down {
-	position: flex;
 	vertical-align: middle;
 }
 
@@ -208,7 +202,6 @@ input {
 }
 
 input:focus {
-	border: 1% solid;
 	color: #000;
 }
 
@@ -239,7 +232,6 @@ input:focus {
 	/* height: 90vh; */
     text-align: center;
     overflow: hidden;
-	position: center;
 	margin: 0vh auto;
 	/* margin-left: 22%; */
 }
@@ -250,7 +242,6 @@ input:focus {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-	position: center;
  }
  
 .slides > div {
@@ -440,18 +431,16 @@ input:focus {
     width: 57%;
     text-align: center;
     overflow: hidden;
-	position: center;
 	margin-left: 23%;
 }
 
 .slides2 {
-	size: 25%;
+	resize: 25%;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-	position: center;
  }
  
 .slides2 > div {
@@ -489,7 +478,6 @@ input:focus {
 }
 
 .h61 {
-	position: flex;
 	margin-left: 5%;
 	margin-top: -26%;
 	padding-right: 4%;
@@ -515,7 +503,6 @@ input:focus {
 }
 
 .h62 {
-	position: flex;
 	margin-left: 5%;
 	margin-top: -26%;
 	padding-right: 4%;
@@ -541,7 +528,6 @@ input:focus {
 }
 
 .h63 {
-	position: flex;
 	margin-left: 2%;
 	margin-top: -22%;
 }
@@ -564,10 +550,6 @@ input:focus {
 	width: 15%;
 	margin-right: 70%;
 	margin-top: 50%;
-}
-
-.weare-down {
-	position: flex;
 }
 
 .weare-title {
@@ -632,7 +614,6 @@ input:focus {
 	background: #000;
 	font-size: 1.4vw;
 	color: #fff;
-	position: flex;
 	text-align: center;
 	padding-top: 3%;
 	padding-bottom: 1%;
@@ -640,7 +621,6 @@ input:focus {
 
 .down {
 	margin-bottom: 0%;
-	position: flex;
 	bottom: 0%;
 	background-color: #000;
 	height: 4vh;
