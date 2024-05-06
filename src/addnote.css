@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-image: url("./pictures/background.png"); */
+}
+@font-face {
+    font-family: 'alumr';
+    src: url('./fonts/AlumniSansPinstripe-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'gg';
+    src: url('./fonts/gogol_regular.otf') format('opentype');
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    #addmainspace {
+        top: 50px;
+        position: absolute;
+        width: 100%;
+        right: 0;
+    }
+    #backgroundaddimgl {
+        width: 50%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: -10;
+    }
+    #backgroundaddimgr {
+        width: 70%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: -10;
+    }
+    #rowaddnotefull {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: calc(100vh - 50px);
+    }
+    #colzapandopi {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+    #zagaddnote {
+        margin-top: 1vh;
+        height: 5vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: 'alumr';
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        border-radius: 15px;
+    }
+    #zagforaddblock {
+        width: 100%;
+        border: none;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.747);
+        font-family: 'gg';
+        font-size: 15px;
+        padding-left: 20px;
+        color: black;
+    }
+    #opiaddnote {
+        margin-top: 2vh;
+        height: 86vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        border-radius: 15px;
+        margin-bottom: 2vh;
+    }
+    #opiforaddblock {
+        width: 100%;
+        border: none;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.747);
+        font-family: 'gg';
+        font-size: 15px;
+        padding-left: 20px;
+        color: black;
+    }
+    #coliconsadd {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin-bottom: 3vh;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #delicon {
+        margin-bottom: 1vh;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    #savicon {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    textarea {
+        padding-top: 1vh;
+    }
+}
+@media screen and (min-width: 481px) {
+    #addmainspace {
+        position: absolute;
+        width: calc(100% - 70px);
+        height: 100vh;
+        right: 0;
+    }
+    #backgroundaddimgl {
+        width: 50%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: -10;
+    }
+    #backgroundaddimgr {
+        width: 70%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: -10;
+    }
+    #rowaddnotefull {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+    #colzapandopi {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+    #zagaddnote {
+        margin-top: 3vh;
+        height: 5vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: 'alumr';
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        border-radius: 15px;
+    }
+    #zagforaddblock {
+        width: 100%;
+        border: none;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.747);
+        font-family: 'gg';
+        font-size: 25px;
+        padding-left: 20px;
+        color: black;
+    }
+    #opiaddnote {
+        margin-top: 3vh;
+        height: 86vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        border-radius: 15px;
+    }
+    #opiforaddblock {
+        width: 100%;
+        border: none;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.747);
+        font-family: 'gg';
+        font-size: 25px;
+        padding-left: 20px;
+        color: black;
+    }
+    #coliconsadd {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin-bottom: 3vh;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #delicon {
+        margin-bottom: 1vh;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    #savicon {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    textarea {
+        padding-top: 10px;
+    }
+}

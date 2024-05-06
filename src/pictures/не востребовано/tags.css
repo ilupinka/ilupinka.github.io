@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-image: url("./pictures/background.png"); */
+}
+@font-face {
+    font-family: 'alumr';
+    src: url('./fonts/AlumniSansPinstripe-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'gg';
+    src: url('./fonts/gogol_regular.otf') format('opentype');
+}
+#filterleftflowersblog {
+    position: fixed;
+    z-index: -10;
+    bottom: 0;
+    width: 500px;
+}
+#filterrightflowersblog {
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    right: 0;
+    width: 500px;
+}
+#buttonslistforfilter {
+    position: absolute;
+    top: 60px;
+    left: 205px;
+}
+.buttonfilterall {
+    position: relative;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 38px;
+    text-align: center;
+    margin-left: 15px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: #ff9e2ed3;
+}
+.buttonfilterall:hover {
+    background-color: #000000c7;
+}
+.buttonfilter1 {
+    position: relative;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 38px;
+    text-align: center;
+    margin-left: 15px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: #b15600e5;
+}
+.buttonfilter1:hover {
+    background-color: #000000c7;
+}
+.buttonfilter2 {
+    position: relative;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 38px;
+    text-align: center;
+    margin-left: 15px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: #dc8d17d8;
+}
+.buttonfilter2:hover {
+    background-color: #000000c7;
+}
+.buttonfilter3 {
+    position: relative;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 38px;
+    text-align: center;
+    margin-left: 15px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: #cd450ad3;
+}
+.buttonfilter3:hover {
+    background-color: #000000c7;
+}
+.buttonfilter4 {
+    position: relative;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 38px;
+    text-align: center;
+    margin-left: 15px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: #eab93ddc;
+}
+.buttonfilter4:hover {
+    background-color: #000000c7;
+}
+.buttonfilter5 {
+    position: relative;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 38px;
+    text-align: center;
+    margin-left: 15px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: #ee6605d5;
+}
+.buttonfilter5:hover {
+    background-color: #000000c7;
+}
+.buttonfilter6 {
+    position: relative;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 38px;
+    text-align: center;
+    margin-left: 15px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: #ad4204dc;
+}
+.buttonfilter6:hover {
+    background-color: #000000c7;
+}
+.filtertextsblog1 {
+    display: none;
+}
+.filtertextsblog2 {
+    display: none;
+}
+.filtertextsblog3 {
+    display: none;
+}
+.show {
+    display: block;
+}
+#filtersquarethirdpage1 {
+    background-color: #fff;
+    width: 1600px;
+    height: 300px;
+    position: absolute;
+    z-index: -5;
+    top: 160px;
+    left: 200px;
+    border-radius: 25px;
+    opacity: 75%;
+}
+#filterblogpic1 {
+    position: absolute;
+    top: 171px;
+    left: 213px;
+    transition-duration: 0.3s;
+}
+#filterblogpic1:hover {
+    scale: 102%;
+}
+#filterzagthirdblog1 {
+    font-family: "alumr";
+    position: absolute;
+    top: 180px;
+    left: 650px;
+    font-size: 36px;
+    width: 1110px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #222222;
+    transition-duration: 0.3s;
+}
+#filterzagthirdblog1:hover {
+    color: #000;
+    scale: 102%;
+}
+#filtertextthirdblog1 {
+    font-family: "alumr";
+    position: absolute;
+    top: 250px;
+    left: 630px;
+    font-size: 20px;
+    width: 1140px;
+    font-weight: 600;
+    text-indent: 40px;
+}
+#filtertagoninstructionbutton1 {
+    position: absolute;
+    top: 330px;
+    left: 620px;
+    background-color: #b15600e5;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    transition-duration: 0.3s;
+}
+#filtertagoninstructionbutton1:hover {
+    background-color: #000000c7;
+}
+#filtertagonhealthbutton1 {
+    position: absolute;
+    top: 330px;
+    left: 780px;
+    background-color: #dc8d17d8;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height:30px;
+    text-align: center;
+    padding-top: 8px;
+    transition-duration: 0.3s;
+}
+#filtertagonhealthbutton1:hover {
+    background-color: #000000c7;
+}
+#filtertagonpsyhologybutton1 {
+    position: absolute;
+    top: 330px;
+    left: 940px;
+    background-color: #eab93ddc;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    transition-duration: 0.3s;
+}
+#filtertagonpsyhologybutton1:hover {
+    background-color: #000000c7;
+}
+#filtertime1pageblog {
+    position: absolute;
+    top: 382px;
+    left: 630px;
+}
+#filtertimethirdpageblog1 {
+    font-family: "alumr";
+    position: absolute;
+    top: 387px;
+    left: 630px;
+    font-size: 20px;
+    width: 1140px;
+    font-weight: 600;
+    text-indent: 40px;
+}
+#filterdatathirdpageblog1 {
+    font-family: "alumr";
+    position: absolute;
+    top: 425px;
+    left: 590px;
+    font-size: 18px;
+    width: 1140px;
+    font-weight: 600;
+    text-indent: 40px;
+}
+#filtersquarethirdpage2 {
+    background-color: #fff;
+    width: 1600px;
+    height: 300px;
+    position: absolute;
+    z-index: -5;
+    top: 490px;
+    left: 200px;
+    border-radius: 25px;
+    opacity: 75%;
+}
+#filterblogpic2 {
+    position: absolute;
+    top: 502px;
+    left: 213px;
+    transition-duration: 0.3s;
+}
+#filterblogpic2:hover {
+    scale: 102%;
+}
+#filterzagthirdblog2 {
+    font-family: "alumr";
+    position: absolute;
+    top: 511px;
+    left: 650px;
+    font-size: 36px;
+    width: 1110px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #222222;
+    transition-duration: 0.3s;
+}
+#filterzagthirdblog2:hover {
+    color: #000;
+    scale: 102%;
+}
+#filtertextthirdblog2 {
+    font-family: "alumr";
+    position: absolute;
+    top: 580px;
+    left: 630px;
+    font-size: 20px;
+    width: 1140px;
+    font-weight: 600;
+    text-indent: 40px;
+}
+#filtertagoninstructionbutton2 {
+    position: absolute;
+    top: 661px;
+    left: 620px;
+    background-color: #b15600e5;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    transition-duration: 0.3s;
+}
+#filtertagoninstructionbutton2:hover {
+    background-color: #000000c7;
+}
+#filtertagonselfdevelopmentbutton1 {
+    position: absolute;
+    top: 661px;
+    left: 780px;
+    background-color: #ee6605d5;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    transition-duration: 0.3s;
+}
+#filtertagonselfdevelopmentbutton1:hover {
+    background-color: #000000c7;
+}
+#filtertagoncreativebutton1 {
+    position: absolute;
+    top: 661px;
+    left: 940px;
+    background-color: #ad4204dc;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    transition-duration: 0.3s;
+}
+#filtertagoncreativebutton1:hover {
+    background-color: #000000c7;
+}
+#filtertime2pageblog {
+    position: absolute;
+    top: 713px;
+    left: 630px;
+}
+#filtertimethirdpageblog2 {
+    font-family: "alumr";
+    position: absolute;
+    top: 718px;
+    left: 630px;
+    font-size: 20px;
+    width: 1140px;
+    font-weight: 600;
+    text-indent: 40px;
+}
+#filterdatathirdpageblog2 {
+    font-family: "alumr";
+    position: absolute;
+    top: 756px;
+    left: 590px;
+    font-size: 18px;
+    width: 1140px;
+    font-weight: 600;
+    text-indent: 40px;
+}
+#filtersquarethirdpage3 {
+    background-color: #fff;
+    width: 1600px;
+    height: 300px;
+    position: absolute;
+    z-index: -5;
+    top: 820px;
+    left: 200px;
+    border-radius: 25px;
+    opacity: 75%;
+}
+#filterblogpic3 {
+    position: absolute;
+    top: 832px;
+    left: 213px;
+    transition-duration: 0.3s;
+}
+#filterblogpic3:hover {
+    scale: 102%;
+}
+#filterzagthirdblog3 {
+    font-family: "alumr";
+    position: absolute;
+    top: 841px;
+    left: 650px;
+    font-size: 36px;
+    width: 1110px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #222222;
+    transition-duration: 0.3s;
+}
+#filterzagthirdblog3:hover {
+    color: #000;
+    scale: 102%;
+}
+#filtertextthirdblog3 {
+    font-family: "alumr";
+    position: absolute;
+    top: 910px;
+    left: 630px;
+    font-size: 20px;
+    width: 1140px;
+    font-weight: 600;
+    text-indent: 40px;
+}
+#filtertagonpracticebutton1 {
+    position: absolute;
+    top: 991px;
+    left: 620px;
+    background-color: #cd450ad3;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    transition-duration: 0.3s;
+}
+#filtertagonpracticebutton1:hover {
+    background-color: #000000c7;
+}
+#filtertagonpsyhologybutton2 {
+    position: absolute;
+    top: 991px;
+    left: 780px;
+    background-color: #eab93ddc;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    transition-duration: 0.3s;
+}
+#filtertagonpsyhologybutton2:hover {
+    background-color: #000000c7;
+}
+#filtertagoncreativebutton2 {
+    position: absolute;
+    top: 991px;
+    left: 940px;
+    background-color: #ad4204dc;
+    text-decoration: none;
+    color: #fff;
+    font-family: "alumr";
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    transition-duration: 0.3s;
+}
+#filtertagoncreativebutton2:hover {
+    background-color: #000000c7;
+}
+#filtertime3pageblog {
+    position: absolute;
+    top: 1043px;
+    left: 630px;
+}
+#filtertimethirdpageblog3 {
+    font-family: "alumr";
+    position: absolute;
+    top: 1048px;
+    left: 630px;
+    font-size: 20px;
+    width: 1140px;
+    font-weight: 600;
+    text-indent: 40px;
+}
+#filterdatathirdpageblog3 {
+    font-family: "alumr";
+    position: absolute;
+    top: 1086px;
+    left: 590px;
+    font-size: 18px;
+    width: 1140px;
+    font-weight: 600;
+    text-indent: 40px;
+    padding-bottom: 30px;
+}

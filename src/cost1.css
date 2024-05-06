@@ -1,0 +1,917 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "gg";
+  src: url("./fonts/gogol_regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "alumi";
+  src: url("./fonts/AlumniSansPinstripe-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "alumr";
+  src: url("./fonts/AlumniSansPinstripe-Regular.ttf") format("truetype");
+}
+@media screen and (min-width: 1300px) {
+  #allitemscost {
+    position: relative;
+    width: calc(100% - 80px);
+    height: 100vh;
+    z-index: 1;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #colzagcost {
+    position: relative;
+    font-family: "gg";
+    font-size: 55px;
+    top: -15%;
+  }
+  #rowswithitemscost {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: -5%;
+  }
+  #item1free {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+  }
+  #cost1cost {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+  }
+  #textinblockcost {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #tabletrycost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #namecost1 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 15px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+  }
+  #freepic {
+    position: relative;
+    display: table-cell;
+    padding: 25px 0;
+  }
+  #opisonsecondpage1 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 55px 0;
+    font-family: "alumr";
+    font-size: 23px;
+    font-weight: 600;
+  }
+  #namecost2 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+  }
+  #freepic2 {
+    position: relative;
+    display: table-cell;
+    padding: 30px 0;
+    font-family: "alumr";
+    font-size: 40px;
+    font-weight: 600;
+  }
+  #opisonsecondpage2 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 40px 0 10px 0;
+    font-family: "alumr";
+    font-size: 23px;
+    font-weight: 600;
+  }
+  #namecost3 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+  }
+  #freepic3 {
+    position: relative;
+    display: table-cell;
+    padding: 30px 0;
+    font-family: "alumr";
+    font-size: 40px;
+    font-weight: 600;
+  }
+  #opisonsecondpage3 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 40px 0 10px 0;
+    font-family: "alumr";
+    font-size: 23px;
+    font-weight: 600;
+  }
+  #buttonsidcost1 {
+    position: absolute;
+    margin-bottom: -600px;
+    z-index: 1;
+  }
+  #buttononsecondpage1 {
+    z-index: 1;
+    list-style: none;
+  }
+  #buttononsecondpage1 li {
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 15px 0;
+    position: relative;
+    background-color: #ba488570;
+    border-radius: 5px 10px 10px 5px;
+    overflow: hidden;
+    width: 200px;
+    height: 50px;
+  }
+  #buttononsecondpage1 li::before {
+    content: "";
+    position: absolute;
+    background-color: #ba4885;
+    border-radius: 5px 15px 15px 5px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    transition: 0.3s all ease-in-out;
+  }
+  #buttononsecondpage1 li:hover::before {
+    border-radius: 5px 10px 10px 5px;
+    width: 110%;
+  }
+  #buttononsecondpage1 li a {
+    display: grid;
+    place-items: center;
+    height: 50px;
+    text-decoration: none;
+    color: #000;
+    font-family: "alumr";
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+  }
+}
+@media (min-width: 1050px) and (max-width: 1299px) {
+  #allitemscost {
+    position: relative;
+    width: calc(100% - 80px);
+    height: 100vh;
+    z-index: 1;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #colzagcost {
+    position: relative;
+    font-family: "gg";
+    font-size: 55px;
+    top: -15%;
+  }
+  #rowswithitemscost {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: -5%;
+  }
+  #item1free {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+  }
+  #cost1cost {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+  }
+  #textinblockcost {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #tabletrycost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #namecost1 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 15px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+  }
+  #freepic {
+    position: relative;
+    display: table-cell;
+    padding: 25px 0;
+    width: 50px;
+  }
+  #opisonsecondpage1 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 50px 0;
+    font-family: "alumr";
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #namecost2 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+  }
+  #freepic2 {
+    position: relative;
+    display: table-cell;
+    padding: 30px 0;
+    font-family: "alumr";
+    font-size: 30px;
+    font-weight: 600;
+  }
+  #opisonsecondpage2 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    font-family: "alumr";
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #namecost3 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+  }
+  #freepic3 {
+    position: relative;
+    display: table-cell;
+    padding: 30px 0;
+    font-family: "alumr";
+    font-size: 30px;
+    font-weight: 600;
+  }
+  #opisonsecondpage3 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    font-family: "alumr";
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #buttonsidcost1 {
+    position: absolute;
+    margin-bottom: -550px;
+    z-index: 1;
+  }
+  #buttononsecondpage1 {
+    z-index: 1;
+    list-style: none;
+  }
+  #buttononsecondpage1 li {
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 15px 0;
+    position: relative;
+    background-color: #ba488570;
+    border-radius: 5px 10px 10px 5px;
+    overflow: hidden;
+    width: 150px;
+    height: 50px;
+  }
+  #buttononsecondpage1 li::before {
+    content: "";
+    position: absolute;
+    background-color: #ba4885;
+    border-radius: 5px 15px 15px 5px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    transition: 0.3s all ease-in-out;
+  }
+  #buttononsecondpage1 li:hover::before {
+    border-radius: 5px 10px 10px 5px;
+    width: 110%;
+  }
+  #buttononsecondpage1 li a {
+    display: grid;
+    place-items: center;
+    height: 50px;
+    text-decoration: none;
+    color: #000;
+    font-family: "alumr";
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+  }
+}
+@media (min-width: 850px) and (max-width: 1049px) {
+  #allitemscost {
+    position: relative;
+    width: calc(100% - 80px);
+    height: 100vh;
+    z-index: 1;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #colzagcost {
+    position: relative;
+    font-family: "gg";
+    font-size: 55px;
+    top: -15%;
+  }
+  #rowswithitemscost {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: -5%;
+  }
+  #item1free {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+  }
+  #cost1cost {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+  }
+  #textinblockcost {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #tabletrycost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #namecost1 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 15px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  #freepic {
+    position: relative;
+    display: table-cell;
+    padding: 10px 0;
+    width: 40px;
+  }
+  #opisonsecondpage1 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 40px 0;
+    font-family: "alumr";
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #namecost2 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  #freepic2 {
+    position: relative;
+    display: table-cell;
+    padding: 10px 0;
+    font-family: "alumr";
+    font-size: 25px;
+    font-weight: 600;
+  }
+  #opisonsecondpage2 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    font-family: "alumr";
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #namecost3 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  #freepic3 {
+    position: relative;
+    display: table-cell;
+    padding: 10px 0;
+    font-family: "alumr";
+    font-size: 25px;
+    font-weight: 600;
+  }
+  #opisonsecondpage3 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    font-family: "alumr";
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #buttonsidcost1 {
+    position: absolute;
+    margin-bottom: -450px;
+    z-index: 1;
+  }
+  #buttononsecondpage1 {
+    z-index: 1;
+    list-style: none;
+  }
+  #buttononsecondpage1 li {
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 15px 0;
+    position: relative;
+    background-color: #ba488570;
+    border-radius: 5px 10px 10px 5px;
+    overflow: hidden;
+    width: 150px;
+    height: 50px;
+  }
+  #buttononsecondpage1 li::before {
+    content: "";
+    position: absolute;
+    background-color: #ba4885;
+    border-radius: 5px 15px 15px 5px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    transition: 0.3s all ease-in-out;
+  }
+  #buttononsecondpage1 li:hover::before {
+    border-radius: 5px 10px 10px 5px;
+    width: 110%;
+  }
+  #buttononsecondpage1 li a {
+    display: grid;
+    place-items: center;
+    height: 50px;
+    text-decoration: none;
+    color: #000;
+    font-family: "alumr";
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+  }
+}
+@media (min-width: 650px) and (max-width: 849px) {
+  #allitemscost {
+    position: relative;
+    width: calc(100% - 80px);
+    height: 100vh;
+    z-index: 1;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #colzagcost {
+    position: relative;
+    font-family: "gg";
+    font-size: 55px;
+    top: -15%;
+  }
+  #rowswithitemscost {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: -5%;
+  }
+  #item1free {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+  }
+  #cost1cost {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+  }
+  #textinblockcost {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #tabletrycost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #namecost1 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 15px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  #freepic {
+    position: relative;
+    display: table-cell;
+    padding: 5px 0;
+    width: 30px;
+  }
+  #opisonsecondpage1 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 35px 0;
+    font-family: "alumr";
+    font-size: 15px;
+    font-weight: 600;
+  }
+  #namecost2 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  #freepic2 {
+    position: relative;
+    display: table-cell;
+    padding: 5px 0;
+    font-family: "alumr";
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #opisonsecondpage2 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    font-family: "alumr";
+    font-size: 15px;
+    font-weight: 600;
+  }
+  #namecost3 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  #freepic3 {
+    position: relative;
+    display: table-cell;
+    padding: 5px 0;
+    font-family: "alumr";
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #opisonsecondpage3 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    font-family: "alumr";
+    font-size: 15px;
+    font-weight: 600;
+  }
+  #buttonsidcost1 {
+    position: absolute;
+    margin-bottom: -350px;
+    z-index: 1;
+  }
+  #buttononsecondpage1 {
+    z-index: 1;
+    list-style: none;
+  }
+  #buttononsecondpage1 li {
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 15px 0;
+    position: relative;
+    background-color: #ba488570;
+    border-radius: 5px 10px 10px 5px;
+    overflow: hidden;
+    width: 100px;
+    height: 50px;
+  }
+  #buttononsecondpage1 li::before {
+    content: "";
+    position: absolute;
+    background-color: #ba4885;
+    border-radius: 5px 15px 15px 5px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    transition: 0.3s all ease-in-out;
+  }
+  #buttononsecondpage1 li:hover::before {
+    border-radius: 5px 10px 10px 5px;
+    width: 110%;
+  }
+  #buttononsecondpage1 li a {
+    display: grid;
+    place-items: center;
+    height: 50px;
+    text-decoration: none;
+    color: #000;
+    font-family: "alumr";
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    z-index: 2;
+  }
+}
+@media (min-width: 320px) and (max-width: 649px) {
+  #allitemscost {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50px;
+  }
+  #colzagcost {
+    position: relative;
+    font-family: "gg";
+    font-size: 45px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #rowswithitemscost {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  #item1free {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin-bottom: 230px;
+  }
+  #cost1cost {
+    /* margin-top: 80px; */
+    position: absolute;
+    width: 100%;
+  }
+  #textinblockcost {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #tabletrycost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #namecost1 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 15px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+  }
+  #freepic {
+    position: relative;
+    display: table-cell;
+    padding: 30px 0;
+    width: 40px;
+  }
+  #opisonsecondpage1 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 30px 0;
+    font-family: "alumr";
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #namecost2 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+  }
+  #freepic2 {
+    position: relative;
+    display: table-cell;
+    padding: 30px 0;
+    font-family: "alumr";
+    font-size: 25px;
+    font-weight: 600;
+  }
+  #opisonsecondpage2 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 30px 0 0px 0;
+    font-family: "alumr";
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #namecost3 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 20px 0;
+    font-family: "gg";
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+  }
+  #freepic3 {
+    position: relative;
+    display: table-cell;
+    padding: 30px 0;
+    font-family: "alumr";
+    font-size: 25px;
+    font-weight: 600;
+  }
+  #opisonsecondpage3 {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    padding: 30px 0 0px 0;
+    font-family: "alumr";
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #buttonsidcost1 {
+    position: absolute;
+    margin-bottom: -510px;
+    z-index: 1;
+  }
+  #buttononsecondpage1 {
+    position: relative;
+    z-index: 1;
+    list-style: none;
+  }
+  #buttononsecondpage1 li {
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 15px 0;
+    position: relative;
+    background-color: #ba488570;
+    border-radius: 5px 10px 10px 5px;
+    overflow: hidden;
+    width: 150px;
+    height: 50px;
+  }
+  #buttononsecondpage1 li::before {
+    content: "";
+    position: absolute;
+    background-color: #ba4885;
+    border-radius: 5px 15px 15px 5px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    transition: 0.3s all ease-in-out;
+  }
+  #buttononsecondpage1 li:hover::before {
+    border-radius: 5px 10px 10px 5px;
+    width: 110%;
+  }
+  #buttononsecondpage1 li a {
+    display: grid;
+    place-items: center;
+    height: 50px;
+    text-decoration: none;
+    color: #000;
+    font-family: "alumr";
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+  }
+}

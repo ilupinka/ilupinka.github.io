@@ -1,0 +1,1187 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-image: url("./pictures/background.png"); */
+}
+@font-face {
+    font-family: 'alumr';
+    src: url('./fonts/AlumniSansPinstripe-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'gg';
+    src: url('./fonts/gogol_regular.otf') format('opentype');
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    #backgrounduserimg {
+        position: fixed;
+        right: 0;
+        width: 30%;
+    }
+    #rowforchaptersuser {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+    .menuopenuser.open {
+        position: fixed;
+        top: 6vh;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        z-index: 500;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .menucloseuser.open {
+        position: fixed;
+        top: 6vh;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        z-index: 500;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .menuopenuser.close {
+        display: none;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .menucloseuser.close {
+        display: none;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    #buttonmenuopenuser {
+        cursor: pointer;
+        width: 25px;
+    }
+    #buttonmenuclosenuser {
+        cursor: pointer;
+        width: 25px;
+    }
+    #firstchapteruser {
+        position: relative;
+        width: 90%;
+        margin-left: 5%;
+        top: 10vh;
+    }
+    .containermenu.open {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .containermenu.close {
+        display: none;
+    }
+    @keyframes aniconop {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    #whiteblockuser {
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+    }
+    #researchinputuser {
+        font-family: 'alumr';
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        margin-left: 15px;
+        width: 80%;
+    }
+    #calendaruser {
+        position: relative;
+        margin-top: 15px;
+    }
+    #blockcaluser {
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        width: 100%;
+    }
+    #arrowsnameusercal {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #leftcal {
+        cursor: pointer;
+        width: 24px;
+    }
+    #rightcal {
+        cursor: pointer;
+        width: 24px;
+    }
+    #nameofmonth {
+        font-family: 'gg';
+        font-size: 25px;
+        font-weight: 400;
+        margin: 5px 5% 0 5%;
+    }
+    #daysofmonth {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-family: 'alumr';
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    #rowdaysuser {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    #daysuser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 20px;
+        margin: 10px 2% 10px 2%;
+        font-size: 15px;
+    }
+    #daylastuser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin: 10px 2% 10px 2%;
+        background-color: #fec72f62;
+        border-radius: 100px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        font-size: 15px;
+    }
+    #daylastuser:hover {
+        background-color: rgba(0, 0, 0, 0.274);
+    }
+    #daynowuser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin: 10px 2% 10px 2%;
+        background-color: #fec72fc4;
+        border-radius: 100px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        font-size: 15px;
+    }
+    #daynowuser:hover {
+        background-color: rgba(0, 0, 0, 0.574);
+        color: white;
+    }
+    #daynowuserhol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin: 10px 2% 10px 2%;
+        background-color: #fec72f;
+        border-radius: 100px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        font-size: 15px;
+    }
+    #daynowuserhol:hover {
+        background-color: rgba(0, 0, 0, 0.874);
+        color: white;
+    }
+    #blocknotsuser {
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        width: 100%;
+        font-family: 'alumr';
+        height: 30vh;
+        margin-top: 15px;
+    }
+    #notstodayuser {
+        font-size: 15px;
+    }
+    #littleuserimg {
+        position: absolute;
+        bottom: 0;
+        width: 130px;
+    }
+    #secondchapteruser {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 12vh;
+    }
+    #zagstarttoday {
+        font-family: 'gg';
+        font-weight: 300;
+        font-size: 25px;
+        text-align: center;
+    }
+    #startnowuser {
+        padding-top: 25px;
+        width: 80%;
+        cursor: pointer;
+    }
+    #startnowuser li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 5px 0;
+        position: relative;
+        background-color: #fec72f6e;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 50%;
+        height: 50px;
+    }
+    #startnowuser li::before {
+        content: "";
+        position: absolute;
+        background-color: #fec72f;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #startnowuser li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #startnowuser li a {
+        display: grid;
+        place-items: center;
+        height: 50px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 18px;
+        position: relative;
+        z-index: 2;
+    }
+    #researchimguser{
+        width: 30px;
+    }
+    #zapfottry {
+        z-index: 10;
+        background-color: #fec72fbb;
+        color: black;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 1vh;
+        width: 90%;
+        transition-duration: 0.3s;
+        cursor: pointer;
+    }
+    #zapfottry:hover {
+        background-color: #000000ce;
+        color: white;
+    }
+}
+@media (min-width: 481px) and (max-width: 649px) {
+    #backgrounduserimg {
+        position: fixed;
+        right: 0;
+        width: 30%;
+    }
+    #rowforchaptersuser {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
+    .menuopenuser.open {
+        position: fixed;
+        top: 10vh;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        z-index: 500;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .menucloseuser.open {
+        position: fixed;
+        top: 10vh;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        z-index: 500;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .menuopenuser.close {
+        display: none;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .menucloseuser.close {
+        display: none;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    #buttonmenuopenuser {
+        cursor: pointer;
+        width: 30px;
+    }
+    #buttonmenuclosenuser {
+        cursor: pointer;
+        width: 30px;
+    }
+    #firstchapteruser {
+        position: relative;
+        width: 90%;
+        margin-left: 5%;
+        top: 10vh;
+    }
+    .containermenu.open {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .containermenu.close {
+        display: none;
+    }
+    @keyframes aniconop {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    #whiteblockuser {
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+    }
+    #researchinputuser {
+        font-family: 'alumr';
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        margin-left: 15px;
+        width: 80%;
+    }
+    #calendaruser {
+        position: relative;
+        margin-top: 15px;
+    }
+    #blockcaluser {
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        width: 100%;
+    }
+    #arrowsnameusercal {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #leftcal {
+        cursor: pointer;
+        width: 24px;
+    }
+    #rightcal {
+        cursor: pointer;
+        width: 24px;
+    }
+    #nameofmonth {
+        font-family: 'gg';
+        font-size: 25px;
+        font-weight: 400;
+        margin: 5px 5% 0 5%;
+    }
+    #daysofmonth {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-family: 'alumr';
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    #rowdaysuser {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    #daysuser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 20px;
+        margin: 10px 2% 10px 2%;
+        font-size: 15px;
+    }
+    #daylastuser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin: 10px 2% 10px 2%;
+        background-color: #fec72f62;
+        border-radius: 100px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        font-size: 15px;
+    }
+    #daylastuser:hover {
+        background-color: rgba(0, 0, 0, 0.274);
+    }
+    #daynowuser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin: 10px 2% 10px 2%;
+        background-color: #fec72fc4;
+        border-radius: 100px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        font-size: 15px;
+    }
+    #daynowuser:hover {
+        background-color: rgba(0, 0, 0, 0.574);
+        color: white;
+    }
+    #daynowuserhol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin: 10px 2% 10px 2%;
+        background-color: #fec72f;
+        border-radius: 100px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        font-size: 15px;
+    }
+    #daynowuserhol:hover {
+        background-color: rgba(0, 0, 0, 0.874);
+        color: white;
+    }
+    #blocknotsuser {
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        width: 100%;
+        font-family: 'alumr';
+        height: 30vh;
+        margin-top: 15px;
+    }
+    #notstodayuser {
+        font-size: 15px;
+    }
+    #littleuserimg {
+        position: absolute;
+        bottom: 0;
+        width: 130px;
+    }
+    #secondchapteruser {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 12vh;
+    }
+    #zagstarttoday {
+        font-family: 'gg';
+        font-weight: 300;
+        font-size: 25px;
+        text-align: center;
+    }
+    #startnowuser {
+        padding-top: 25px;
+        width: 80%;
+        cursor: pointer;
+    }
+    #startnowuser li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 5px 0;
+        position: relative;
+        background-color: #fec72f6e;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 50%;
+        height: 50px;
+    }
+    #startnowuser li::before {
+        content: "";
+        position: absolute;
+        background-color: #fec72f;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #startnowuser li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #startnowuser li a {
+        display: grid;
+        place-items: center;
+        height: 50px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 18px;
+        position: relative;
+        z-index: 2;
+    }
+    #researchimguser{
+        width: 30px;
+    }
+    #zapfottry {
+        z-index: 10;
+        background-color: #fec72fbb;
+        color: black;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 1vh;
+        width: 90%;
+        transition-duration: 0.3s;
+        cursor: pointer;
+    }
+    #zapfottry:hover {
+        background-color: #000000ce;
+        color: white;
+    }
+}
+@media (min-width: 650px) and (max-width: 899px) {
+    #backgrounduserimg {
+        position: fixed;
+        right: 0;
+        width: 30%;
+    }
+    #rowforchaptersuser {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
+    .menuopenuser.open {
+        position: fixed;
+        top: 10vh;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        z-index: 500;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .menucloseuser.open {
+        position: fixed;
+        top: 10vh;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        z-index: 500;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .menuopenuser.close {
+        display: none;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .menucloseuser.close {
+        display: none;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    #buttonmenuopenuser {
+        cursor: pointer;
+        width: 30px;
+    }
+    #buttonmenuclosenuser {
+        cursor: pointer;
+        width: 30px;
+    }
+    #firstchapteruser {
+        position: relative;
+        width: 20%;
+        margin-left: 5%;
+    }
+    .containermenu.open {
+        position: relative;
+        top: 10vh;
+        width: 100%;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .containermenu.close {
+        display: none;
+    }
+    @keyframes aniconop {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    #whiteblockuser {
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+    }
+    #researchinputuser {
+        font-family: 'alumr';
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        margin-left: 15px;
+        width: 80%;
+    }
+    #calendaruser {
+        position: relative;
+        margin-top: 15px;
+    }
+    #blockcaluser {
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        width: 100%;
+    }
+    #arrowsnameusercal {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #leftcal {
+        cursor: pointer;
+        width: 24px;
+    }
+    #rightcal {
+        cursor: pointer;
+        width: 24px;
+    }
+    #nameofmonth {
+        font-family: 'gg';
+        font-size: 25px;
+        font-weight: 400;
+        margin: 5px 5% 0 5%;
+    }
+    #daysofmonth {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-family: 'alumr';
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    #rowdaysuser {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    #daysuser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 20px;
+        margin: 10px 2% 10px 2%;
+        font-size: 15px;
+    }
+    #daylastuser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin: 10px 2% 10px 2%;
+        background-color: #fec72f62;
+        border-radius: 100px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        font-size: 15px;
+    }
+    #daylastuser:hover {
+        background-color: rgba(0, 0, 0, 0.274);
+    }
+    #daynowuser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin: 10px 2% 10px 2%;
+        background-color: #fec72fc4;
+        border-radius: 100px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        font-size: 15px;
+    }
+    #daynowuser:hover {
+        background-color: rgba(0, 0, 0, 0.574);
+        color: white;
+    }
+    #daynowuserhol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin: 10px 2% 10px 2%;
+        background-color: #fec72f;
+        border-radius: 100px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        font-size: 15px;
+    }
+    #daynowuserhol:hover {
+        background-color: rgba(0, 0, 0, 0.874);
+        color: white;
+    }
+    #blocknotsuser {
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        width: 100%;
+        font-family: 'alumr';
+        height: 30vh;
+        margin-top: 15px;
+    }
+    #notstodayuser {
+        font-size: 15px;
+    }
+    #littleuserimg {
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+    }
+    #secondchapteruser {
+        position: relative;
+        width: 50%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #zagstarttoday {
+        font-family: 'gg';
+        font-weight: 300;
+        font-size: 25px;
+    }
+    #startnowuser {
+        padding-top: 25px;
+        width: 80%;
+        cursor: pointer;
+    }
+    #startnowuser li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 5px 0;
+        position: relative;
+        background-color: #fec72f6e;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 50%;
+        height: 50px;
+    }
+    #startnowuser li::before {
+        content: "";
+        position: absolute;
+        background-color: #fec72f;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #startnowuser li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #startnowuser li a {
+        display: grid;
+        place-items: center;
+        height: 50px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 18px;
+        position: relative;
+        z-index: 2;
+    }
+    #researchimguser{
+        width: 30px;
+    }
+    #zapfottry {
+        z-index: 10;
+        background-color: #fec72fbb;
+        color: black;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 1vh;
+        width: 80%;
+        transition-duration: 0.3s;
+        cursor: pointer;
+    }
+    #zapfottry:hover {
+        background-color: #000000ce;
+        color: white;
+    }
+}
+@media screen and (min-width: 900px) {
+    #backgrounduserimg {
+        position: fixed;
+        right: 0;
+        width: 30%;
+    }
+    #rowforchaptersuser {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
+    .menuopenuser.open {
+        position: fixed;
+        top: 10vh;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        z-index: 500;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .menucloseuser.open {
+        position: fixed;
+        top: 10vh;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        z-index: 500;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .menuopenuser.close {
+        display: none;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .menucloseuser.close {
+        display: none;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    #buttonmenuopenuser {
+        cursor: pointer;
+    }
+    #buttonmenuclosenuser {
+        cursor: pointer;
+    }
+    #firstchapteruser {
+        width: 25%;
+        margin-left: 2%;
+    }
+    .containermenu.open {
+        position: relative;
+        top: 10vh;
+        width: 100%;
+        opacity: 0;
+        animation: aniconop 1s forwards;
+    }
+    .containermenu.close {
+        display: none;
+    }
+    @keyframes aniconop {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    #whiteblockuser {
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+    }
+    #researchinputuser {
+        font-family: 'alumr';
+        font-size: 25px;
+        font-weight: 600;
+        border: none;
+        margin-left: 15px;
+        width: 80%;
+    }
+    #calendaruser {
+        position: relative;
+        margin-top: 15px;
+    }
+    #blockcaluser {
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        width: 100%;
+    }
+    #arrowsnameusercal {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #leftcal {
+        cursor: pointer;
+    }
+    #rightcal {
+        cursor: pointer;
+    }
+    #nameofmonth {
+        font-family: 'gg';
+        font-size: 35px;
+        font-weight: 400;
+        margin: 5px 5% 0 5%;
+    }
+    #daysofmonth {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-family: 'alumr';
+        font-size: 15px;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    #rowdaysuser {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    #daysuser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin: 10px 2% 10px 2%;
+        font-size: 30px;
+    }
+    #daylastuser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin: 10px 2% 10px 2%;
+        background-color: #fec72f62;
+        border-radius: 100px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        font-size: 20px;
+    }
+    #daylastuser:hover {
+        background-color: rgba(0, 0, 0, 0.274);
+    }
+    #daynowuser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin: 10px 2% 10px 2%;
+        background-color: #fec72fc4;
+        border-radius: 100px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        font-size: 20px;
+    }
+    #daynowuser:hover {
+        background-color: rgba(0, 0, 0, 0.574);
+        color: white;
+    }
+    #daynowuserhol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin: 10px 2% 10px 2%;
+        background-color: #fec72f;
+        border-radius: 100px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        font-size: 20px;
+    }
+    #daynowuserhol:hover {
+        background-color: rgba(0, 0, 0, 0.874);
+        color: white;
+    }
+    #blocknotsuser {
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        width: 100%;
+        font-family: 'alumr';
+        height: 30vh;
+        margin-top: 15px;
+    }
+    #notstodayuser {
+        font-size: 25px;
+    }
+    #littleuserimg {
+        position: absolute;
+        bottom: 0;
+        height: 25vh;
+    }
+    #secondchapteruser {
+        position: relative;
+        width: 40%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #zagstarttoday {
+        font-family: 'gg';
+        font-weight: 300;
+        font-size: 45px;
+    }
+    #startnowuser {
+        padding-top: 25px;
+        width: 80%;
+        cursor: pointer;
+    }
+    #startnowuser li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #fec72f6e;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #startnowuser li::before {
+        content: "";
+        position: absolute;
+        background-color: #fec72f;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #startnowuser li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #startnowuser li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 25px;
+        position: relative;
+        z-index: 2;
+    }
+    #zapfottry {
+        z-index: 10;
+        background-color: #fec72fbb;
+        color: black;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 1vh;
+        width: 80%;
+        transition-duration: 0.3s;
+        cursor: pointer;
+    }
+    #zapfottry:hover {
+        background-color: #000000ce;
+        color: white;
+    }
+}

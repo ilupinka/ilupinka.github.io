@@ -1,0 +1,764 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-image: url("./pictures/background.png"); */
+}
+@font-face {
+    font-family: 'comfortaa';
+    src: url('./fonts/Comfortaa-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'aquarelle';
+    src: url('./fonts/Aquarelle.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'alumi';
+    src: url('./fonts/AlumniSansPinstripe-Italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'alumr';
+    src: url('./fonts/AlumniSansPinstripe-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'gg';
+    src: url('./fonts/gogol_regular.otf') format('opentype');
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #upblogstate {
+        position: relative;
+        margin-top: 60px;
+        height: 100px;
+        width: 100%;
+        text-align: center;
+    }
+    .inlineforblogstate {
+        position: relative;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    #datainfo1 {
+        font-family: "alumr";
+        font-size: 15px;
+        color: #222222;
+        font-weight: 600;
+    }
+    #tagslistondopinfo1 {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+    #tagoninstructionbuttoninfo1 {
+        display: block;
+        background-color: #b15600e5;
+        text-decoration: none;
+        color: #fff;
+        font-family: "comfortaa";
+        font-weight: 100;
+        border-radius: 15px;
+        font-size: 10px;
+        width: 100px;
+        height: 20px;
+        text-align: center;
+        padding-top: 10px;
+        transition-duration: 0.3s;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    #tagoninstructionbuttoninfo1:hover {
+        background-color: #000000c7;
+    }
+    #tagonhealthbuttoninfo1 {
+        display: block;
+        background-color: #dc8d17d8;
+        text-decoration: none;
+        color: #fff;
+        font-family: "comfortaa";
+        font-weight: 100;
+        border-radius: 15px;
+        font-size: 10px;
+        width: 100px;
+        height: 20px;
+        text-align: center;
+        padding-top: 10px;
+        transition-duration: 0.3s;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    #tagonhealthbuttoninfo1:hover {
+        background-color: #000000c7;
+    }
+    #tagonpsyhologybuttoninfo1 {
+        display: block;
+        background-color: #eab93ddc;
+        text-decoration: none;
+        color: #fff;
+        font-family: "comfortaa";
+        font-weight: 100;
+        border-radius: 15px;
+        font-size: 10px;
+        width: 100px;
+        height: 20px;
+        text-align: center;
+        padding-top: 10px;
+        transition-duration: 0.3s;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+    #tagonpsyhologybuttoninfo1:hover {
+        background-color: #000000c7;
+    }
+    #clockwithtime {
+        position: relative;
+        display: inline-block;
+    }
+    #clockoninfodop1 {
+        width: 25px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    #readingtimeinfo1 {
+        font-family: "alumr";
+        font-size: 15px;
+        color: #222222;
+        font-weight: 600;
+    }
+    #maininformationonblog {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    #zagolinfo1 {
+        margin-top: 20px;
+        font-family: "gg";
+        font-size: 30px;
+        text-align: center;
+        font-weight: 300;
+        color: black;
+    }
+    #fullblogpic1 {
+        position: relative;
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        z-index: -100;
+        left: 50%;
+        transform: translate(-50%,0%);
+    }
+    #textstateonblog {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: -10;
+        text-align: justify;
+        font-family: "alumr";
+    }
+    #zachemspace {
+        height: 10px;
+    }
+    #littlezag1info {
+        position: relative;
+        font-family: "gg";
+        width: 85%;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    #firstab1 {
+        position: relative;
+        font-size: 12px;
+        font-weight: 600;
+        width: 65%;
+        text-align: justify;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    #backgroundonblogcitata {
+        padding: 15px 0;
+        background-color: #f19f23d8;
+        border-radius: 0 50px 0 50px;
+        width: 110%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    #borderblockstate {
+        list-style-image: url('./pictures/flowerspi.png');
+        list-style-position: inside;
+        border-radius: 25px;
+        border-style: double;
+        border-width: 8px;
+        padding: 15px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        border-color: #f19f23d8;
+        width: 110%;
+    }
+    #topcavsonblogstate {
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        font-size: 70px;
+        font-family: "alumi";
+    }
+    #firstab1citata {
+        font-family: "alumi";
+        position: relative;
+        font-size: 12px;
+        font-weight: 600;
+        width: 70%;
+        text-align: justify;
+        margin: 25px 0;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    #bottomcavsonblogstate {
+        position: absolute;
+        bottom: -30px;
+        right: -15px;
+        font-size: 70px;
+        font-family: "alumi";
+    }
+    #picforblogcit1 {
+        position: absolute;
+        width: 60px;
+        transform: scale(-1,1);
+        left: -30px;
+        bottom: -5px;
+        z-index: -110;
+        rotate: 20deg;
+    }
+    #picforblogcit2 {
+        position: absolute;
+        width: 60px;
+        transform: scale(-1,1);
+        right: -40px;
+        top: -5px;
+        z-index: -110;
+        rotate: 20deg;
+    }
+    #samopozimg {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 10px;
+        width: 80%;
+    }
+    #samsamonblog {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 10px;
+        width: 80%;
+    }
+    #samovyrblog {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 10px;
+        width: 80%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1029px) {
+    #upblogstate {
+        position: relative;
+        top: 0;
+        height: 100px;
+        width: calc(100% - 80px);
+        text-align: center;
+        left: 80px;
+    }
+    .inlineforblogstate {
+        position: relative;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    #datainfo1 {
+        font-family: "alumr";
+        font-size: 15px;
+        color: #222222;
+        font-weight: 600;
+    }
+    #tagslistondopinfo1 {
+        list-style-type: none;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    #tagoninstructionbuttoninfo1 {
+        display: block;
+        background-color: #b15600e5;
+        text-decoration: none;
+        color: #fff;
+        font-family: "comfortaa";
+        font-weight: 100;
+        border-radius: 15px;
+        font-size: 10px;
+        width: 100px;
+        height: 25px;
+        text-align: center;
+        padding-top: 13px;
+        transition-duration: 0.3s;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    #tagoninstructionbuttoninfo1:hover {
+        background-color: #000000c7;
+    }
+    #tagonhealthbuttoninfo1 {
+        display: block;
+        background-color: #dc8d17d8;
+        text-decoration: none;
+        color: #fff;
+        font-family: "comfortaa";
+        font-weight: 100;
+        border-radius: 15px;
+        font-size: 10px;
+        width: 100px;
+        height: 25px;
+        text-align: center;
+        padding-top: 13px;
+        transition-duration: 0.3s;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    #tagonhealthbuttoninfo1:hover {
+        background-color: #000000c7;
+    }
+    #tagonpsyhologybuttoninfo1 {
+        display: block;
+        background-color: #eab93ddc;
+        text-decoration: none;
+        color: #fff;
+        font-family: "comfortaa";
+        font-weight: 100;
+        border-radius: 15px;
+        font-size: 10px;
+        width: 100px;
+        height: 25px;
+        text-align: center;
+        padding-top: 13px;
+        transition-duration: 0.3s;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+    #tagonpsyhologybuttoninfo1:hover {
+        background-color: #000000c7;
+    }
+    #clockwithtime {
+        position: relative;
+        display: inline-block;
+    }
+    #clockoninfodop1 {
+        width: 25px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    #readingtimeinfo1 {
+        font-family: "alumr";
+        font-size: 15px;
+        color: #222222;
+        font-weight: 600;
+    }
+    #maininformationonblog {
+        position: relative;
+        z-index: 10;
+        width: calc(100% - 80px);
+        display: grid;
+        place-items: center;
+        left: 80px;
+    }
+    #zagolinfo1 {
+        margin-top: 10px;
+        font-family: "gg";
+        font-size: 40px;
+        text-align: center;
+        font-weight: 300;
+        color: black;
+    }
+    #fullblogpic1 {
+        position: relative;
+        width: 80%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        z-index: -100;
+        left: calc(50% + 40px);
+        transform: translate(-50%,0%);
+    }
+    #textstateonblog {
+        position: relative;
+        width: calc(100% - 80px);
+        display: flex;
+        flex-direction: column;
+        left: 80px;
+        z-index: -10;
+        text-align: justify;
+        font-family: "alumr";
+    }
+    #zachemspace {
+        height: 15px;
+    }
+    #littlezag1info {
+        position: relative;
+        font-family: "gg";
+        width: 85%;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    #firstab1 {
+        position: relative;
+        font-size: 15px;
+        font-weight: 600;
+        width: 65%;
+        text-align: justify;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    #backgroundonblogcitata {
+        padding: 25px 0;
+        background-color: #f19f23d8;
+        border-radius: 0 100px 0 100px;
+        width: 110%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    #borderblockstate {
+        list-style-image: url('./pictures/flowerspi.png');
+        list-style-position: inside;
+        border-radius: 25px;
+        border-style: double;
+        border-width: 8px;
+        padding: 35px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        border-color: #f19f23d8;
+        width: 110%;
+    }
+    #topcavsonblogstate {
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        font-size: 100px;
+        font-family: "alumi";
+    }
+    #firstab1citata {
+        font-family: "alumi";
+        position: relative;
+        font-size: 15px;
+        font-weight: 600;
+        width: 70%;
+        text-align: justify;
+        margin: 25px 0;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    #bottomcavsonblogstate {
+        position: absolute;
+        bottom: -60px;
+        right: -10px;
+        font-size: 100px;
+        font-family: "alumi";
+    }
+    #picforblogcit1 {
+        position: absolute;
+        width: 150px;
+        transform: scale(-1,1);
+        left: -130px;
+        bottom: -5px;
+        z-index: -110;
+        rotate: 20deg;
+    }
+    #picforblogcit2 {
+        position: absolute;
+        width: 150px;
+        transform: scale(-1,1);
+        right: -130px;
+        top: -15px;
+        z-index: -110;
+        rotate: 20deg;
+    }
+    #samopozimg {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 50px;
+        width: 60%;
+    }
+    #samsamonblog {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 50px;
+        width: 60%;
+    }
+    #samovyrblog {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 50px;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1030px) {
+    #upblogstate {
+        position: relative;
+        top: 0;
+        height: 100px;
+        width: calc(100% - 80px);
+        text-align: center;
+        left: 80px;
+    }
+    .inlineforblogstate {
+        vertical-align: middle;
+        display: inline-block;
+    }
+    #datainfo1 {
+        font-family: "alumr";
+        font-size: 20px;
+        color: #222222;
+        font-weight: 600;
+    }
+    #tagslistondopinfo1 {
+        list-style-type: none;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    #tagoninstructionbuttoninfo1 {
+        display: block;
+        background-color: #b15600e5;
+        text-decoration: none;
+        color: #fff;
+        font-family: "comfortaa";
+        font-weight: 100;
+        border-radius: 15px;
+        font-size: 12px;
+        width: 150px;
+        height: 25px;
+        text-align: center;
+        padding-top: 12px;
+        transition-duration: 0.3s;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    #tagoninstructionbuttoninfo1:hover {
+        background-color: #000000c7;
+    }
+    #tagonhealthbuttoninfo1 {
+        display: block;
+        background-color: #dc8d17d8;
+        text-decoration: none;
+        color: #fff;
+        font-family: "comfortaa";
+        font-weight: 100;
+        border-radius: 15px;
+        font-size: 12px;
+        width: 150px;
+        height: 25px;
+        text-align: center;
+        padding-top: 12px;
+        transition-duration: 0.3s;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    #tagonhealthbuttoninfo1:hover {
+        background-color: #000000c7;
+    }
+    #tagonpsyhologybuttoninfo1 {
+        display: block;
+        background-color: #eab93ddc;
+        text-decoration: none;
+        color: #fff;
+        font-family: "comfortaa";
+        font-weight: 100;
+        border-radius: 15px;
+        font-size: 12px;
+        width: 150px;
+        height: 25px;
+        text-align: center;
+        padding-top: 12px;
+        transition-duration: 0.3s;
+        margin: 25px;
+    }
+    #tagonpsyhologybuttoninfo1:hover {
+        background-color: #000000c7;
+    }
+    #clockwithtime {
+        position: relative;
+        display: inline-block;
+    }
+    #clockoninfodop1 {
+        width: 25px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    #readingtimeinfo1 {
+        font-family: "alumr";
+        font-size: 20px;
+        color: #222222;
+        font-weight: 600;
+    }
+    #maininformationonblog {
+        position: relative;
+        z-index: 10;
+        width: calc(100% - 80px);
+        display: grid;
+        place-items: center;
+        left: 80px;
+    }
+    #zagolinfo1 {
+        font-family: "gg";
+        font-size: 60px;
+        text-align: center;
+        font-weight: 300;
+        color: black;
+    }
+    #fullblogpic1 {
+        position: relative;
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        z-index: -100;
+        left: calc(50% + 40px);
+        transform: translate(-50%,0%);
+    }
+    #textstateonblog {
+        position: relative;
+        width: calc(100% - 80px);
+        display: flex;
+        flex-direction: column;
+        left: 80px;
+        z-index: -10;
+        text-align: justify;
+        font-family: "alumr";
+    }
+    #zachemspace {
+        height: 25px;
+    }
+    #littlezag1info {
+        position: relative;
+        font-family: "gg";
+        width: 65%;
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    #firstab1 {
+        position: relative;
+        font-size: 20px;
+        font-weight: 600;
+        width: 45%;
+        text-align: justify;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    #backgroundonblogcitata {
+        padding: 25px 0;
+        background-color: #f19f23d8;
+        border-radius: 0 100px 0 100px;
+        width: 110%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    #borderblockstate {
+        list-style-image: url('./pictures/flowerspi.png');
+        list-style-position: inside;
+        border-radius: 25px;
+        border-style: double;
+        border-width: 10px;
+        padding: 35px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        border-color: #f19f23d8;
+        width: 110%;
+    }
+    #topcavsonblogstate {
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        font-size: 150px;
+        font-family: "alumi";
+    }
+    #firstab1citata {
+        font-family: "alumi";
+        position: relative;
+        font-size: 21px;
+        font-weight: 600;
+        width: 70%;
+        text-align: justify;
+        margin: 25px 0;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    #bottomcavsonblogstate {
+        position: absolute;
+        bottom: -80px;
+        right: -10px;
+        font-size: 150px;
+        font-family: "alumi";
+    }
+    #picforblogcit1 {
+        position: absolute;
+        width: 300px;
+        transform: scale(-1,1);
+        left: -230px;
+        bottom: -5px;
+        z-index: -110;
+        rotate: 20deg;
+    }
+    #picforblogcit2 {
+        position: absolute;
+        width: 300px;
+        transform: scale(-1,1);
+        right: -230px;
+        top: -35px;
+        z-index: -110;
+        rotate: 20deg;
+    }
+    #samopozimg {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 50px;
+        width: 40%;
+    }
+    #samsamonblog {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 50px;
+        width: 40%;
+    }
+    #samovyrblog {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 50px;
+        width: 70%;
+    }
+}

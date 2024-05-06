@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-image: url("./pictures/background.png"); */
+}
+@font-face {
+    font-family: 'gg';
+    src: url('./fonts/gogol_regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'alumr';
+    src: url('./fonts/AlumniSansPinstripe-Regular.ttf') format('truetype');
+}
+
+/* @media (min-width: 0px) and (max-width: 399px) {
+@media (min-width: 400px) and (max-width: 1029px) {
+@media screen and (min-width: 1030px) { */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* расположение изображений заднего плана, придание им прозрачности, указание ширины и позиции */
+    #leftflowerswhy {
+        position: fixed;
+        z-index: -10;
+        bottom: 0;
+        opacity: 80%;
+        width: 60%;
+    }
+    #rightflowerswhy {
+        position: fixed;
+        z-index: -10;
+        top: 0;
+        right: 0;
+        width: 42%;
+    }
+    #yellowbacksquare {
+        background-color: #FFBD00;
+        width: 50%;
+        height: 770px;
+        border-radius: 25px;
+        position: fixed;
+        z-index: -11;
+        right: 70px;
+        top: 70px;
+        opacity: 80%;
+    }
+    #zachemspacehome {
+        height: 10px;
+    }
+    #texts {
+        z-index: 1;
+        position: relative;
+        width: 90%;
+        left: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 50px;
+    }
+    #zag1 {
+        position: relative;
+        z-index: 1;
+        font-family: "gg";
+        font-size: 25px;
+        font-weight: 100;
+        padding-top: 25px;
+    }
+    #textfirst1 {
+        z-index: 1;
+        position: relative;
+        font-family: "alumr";
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #buttononfirstpage {
+        list-style: none;
+    }
+    #buttononfirstpage li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #ffbb0044;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 200px;
+        height: 50px;
+    }
+    #buttononfirstpage li::before {
+        content: "";
+        position: absolute;
+        background-color: #ffbb00d3;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #buttononfirstpage li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #buttononfirstpage li a {
+        display: grid;
+        place-items: center;
+        height: 50px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 17px;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1029px) {
+    #leftflowerswhy {
+        position: fixed;
+        z-index: -10;
+        bottom: 0;
+        opacity: 80%;
+    }
+    #rightflowerswhy {
+        position: fixed;
+        z-index: -10;
+        top: 0;
+        right: 0;
+        width: 42%;
+    }
+    #yellowbacksquare {
+        background-color: #FFBD00;
+        width: 50%;
+        height: 770px;
+        border-radius: 25px;
+        position: fixed;
+        z-index: -11;
+        right: 70px;
+        top: 70px;
+        opacity: 80%;
+    }
+    #zachemspacehome {
+        height: 10px;
+    }
+    #texts {
+        z-index: 1;
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        left: 120px;
+    }
+    #zag1 {
+        position: relative;
+        z-index: 1;
+        font-family: "gg";
+        font-size: 33px;
+        font-weight: 100;
+        padding-top: 25px;
+    }
+    #textfirst1 {
+        z-index: 1;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-family: "alumr";
+        text-align: center;
+        font-weight: 600;
+        font-size: 23px;
+        display: table-cell;
+        vertical-align: middle;
+        height: 100vh;
+    }
+    #buttononfirstpage {
+        list-style: none;
+    }
+    #buttononfirstpage li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #ffbb0044;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 200px;
+        height: 50px;
+    }
+    #buttononfirstpage li::before {
+        content: "";
+        position: absolute;
+        background-color: #ffbb00d3;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #buttononfirstpage li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #buttononfirstpage li a {
+        display: grid;
+        place-items: center;
+        height: 50px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media screen and (min-width: 1030px) {
+    #leftflowerswhy {
+        position: fixed;
+        z-index: -10;
+        bottom: 0;
+        opacity: 80%;
+    }
+    #rightflowerswhy {
+        position: fixed;
+        z-index: -10;
+        top: 0;
+        right: 0;
+        width: 42%;
+    }
+    #yellowbacksquare {
+        background-color: #FFBD00;
+        width: 50%;
+        height: 770px;
+        border-radius: 25px;
+        position: fixed;
+        z-index: -11;
+        right: 70px;
+        top: 70px;
+        opacity: 80%;
+    }
+    #zachemspacehome {
+        height: 25px;
+    }
+    #texts {
+        z-index: 1;
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        left: 120px;
+    }
+    #zag1 {
+        position: relative;
+        z-index: 1;
+        font-family: "gg";
+        font-size: 45px;
+        font-weight: 200;
+        padding-top: 25px;
+    }
+    #textfirst1 {
+        z-index: 1;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-family: "alumr";
+        text-align: center;
+        font-weight: 600;
+        font-size: 23px;
+        display: table-cell;
+        vertical-align: middle;
+        height: 100vh;
+    }
+    #buttononfirstpage {
+        list-style: none;
+    }
+    #buttononfirstpage li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #ffbb0044;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 300px;
+        height: 60px;
+    }
+    #buttononfirstpage li::before {
+        content: "";
+        position: absolute;
+        background-color: #ffbb00d3;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #buttononfirstpage li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #buttononfirstpage li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 25px;
+        position: relative;
+        z-index: 2;
+    }
+}

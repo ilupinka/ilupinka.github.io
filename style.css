@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "cuttie";
+    src: url("SlackCasual-Bold-Cyr.ttf")
+}
+@font-face {
+    font-family: "karakylya";
+    src: url("Krivulya\ Regular.ttf")
+}
+@font-face {
+    font-family: "theater";
+    src: url("Theater-Atlas-Deco.ttf");
+}
+@font-face {
+    font-family: "gogol";
+    src: url("gogol_regular.otf");
+}
+#header {
+    background-color: #EFB786;
+    height: 150px;
+}
+#logoline {
+    display: table;
+    vertical-align: middle;
+    margin: auto;
+    padding: 10px;
+}
+#logo {
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+}
+#name {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "cuttie";
+    font-weight: 500;
+    font-size: 35px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #483948;
+}
+#bottomlogo {
+    border: none;
+    background-color: #483948;
+    color: #483948;
+    height: 2px;
+    width: 95%;
+    text-align: center;
+    margin: 0 2.5% 0 2.5%;
+}
+#email {
+    filter: invert(80%);
+}

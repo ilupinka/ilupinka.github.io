@@ -1,0 +1,773 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-image: url("./pictures/background.png"); */
+}
+@font-face {
+    font-family: 'alumr';
+    src: url('./fonts/AlumniSansPinstripe-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'gg';
+    src: url('./fonts/gogol_regular.otf') format('opentype');
+}
+
+/* @media (min-width: 0px) and (max-width: 399px) {
+@media (min-width: 400px) and (max-width: 1029px) {
+@media screen and (min-width: 1030px) { */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .flowersblogpop {
+        list-style: none;
+        width: 33%;
+    }
+    #leftflowersblog {
+        position: fixed;
+        z-index: -10;
+        bottom: 0;
+        width: 30%;
+    }
+    #rightflowersblog {
+        position: fixed;
+        z-index: -10;
+        top: 0;
+        right: 0;
+        width: 30%;
+    }
+    #maintextsblog {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        top: 50px;
+    }
+    #linearzagblog {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        z-index: 100;
+        width: calc(100% - 15px);
+        padding: 20px 0;
+        align-items: center;
+        left: 15px;
+    }
+    #zag1blog {
+        position: relative;
+        z-index: 1;
+        font-family: "gg";
+        font-size: 20px;
+        font-weight: 100;
+        width: 90%;
+        text-shadow: 1px 1px 0.5px white;
+    }
+    #pencilonthirdpage {
+        position: relative;
+        z-index: 10;
+        width: 25px;
+    }
+    #textsblog {
+        position: relative;
+        width: 100%;
+    }
+    #squarethirdpage1 {
+        position: relative;
+    }
+    #rowblogmain {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffffbb;
+        width: 90%;
+        border-radius: 25px;
+        padding: 5px;
+        left: 4%;
+        margin-bottom: 15px;
+    }
+    #blogpics {
+        margin-top: 10px;
+        position: relative;
+        width: 180px;
+    }
+    #blogpic1 {
+        position: relative;
+        vertical-align: middle;
+        transition-duration: 0.3s;
+        width: 100%;
+    }
+    #blogpic1:hover {
+        scale: 102%;
+    }
+    #rows2inblog {
+        position: relative;
+        width: 90%;
+    }
+    #zagthirdblog1 {
+        position: relative;
+        display: block;
+        width: calc(100% - 25px);
+        left: 15px;
+        padding: 15px 0;
+        font-family: "alumr";
+        font-size: 17px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #222222;
+        transition-duration: 0.3s;
+    }
+    #zagthirdblog1:hover {
+        color: #000000;
+        scale: 102%;
+    }
+    #textthirdblog1 {
+        font-family: "alumr";
+        position: relative;
+        font-size: 14px;
+        font-weight: 600;
+        text-indent: 15px;
+        padding: 0 15px;
+    }
+    #tagsthirdpageblog {
+        position: relative;
+    }
+    #taglistblog {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+    }
+    #tagoninstructionbutton1 {
+        position: relative;
+        background-color: #b15600e5;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 10px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 25px;
+        margin-right: 5px;
+        transition-duration: 0.3s;
+    }
+    #tagoninstructionbutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagonhealthbutton1 {
+        position: relative;
+        background-color: #dc8d17d8;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 25px;
+        margin-right: 5px;
+        transition-duration: 0.3s;
+    }
+    #tagonhealthbutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagonpsyhologybutton1 {
+        position: relative;
+        background-color: #eab93ddc;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 25px;
+        margin-right: 5px;
+        transition-duration: 0.3s;
+    }
+    #tagonpsyhologybutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagonselfdevelopmentbutton1 {
+        position: relative;
+        background-color: #ee6605d5;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 25px;
+        margin-right: 5px;
+        transition-duration: 0.3s;
+    }
+    #tagonselfdevelopmentbutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagoncreativebutton1 {
+        position: relative;
+        background-color: #ad4204dc;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 25px;
+        margin-right: 5px;
+        transition-duration: 0.3s;
+    }
+    #tagoncreativebutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagonpracticebutton1 {
+        position: relative;
+        background-color: #cd450ad3;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 25px;
+        margin-right: 5px;
+        transition-duration: 0.3s;
+    }
+    #tagonpracticebutton1:hover {
+        background-color: #000000c7;
+    }
+    #timedatarows {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    #time1pageblog {
+        position: relative;
+        left: 10px;
+        width: 20px;
+    }
+    #timethirdpageblog1 {
+        font-family: "alumr";
+        position: relative;
+        left: 15px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    #datathirdpageblog1 {
+        font-family: "alumr";
+        position: relative;
+        font-size: 13px;
+        font-weight: 600;
+        left: 10px;
+        width: calc(100% - 10px);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1029px) {
+    .flowersblogpop {
+        list-style: none;
+        width: 33%;
+    }
+    #leftflowersblog {
+        position: fixed;
+        z-index: -10;
+        bottom: 0;
+        width: 30%;
+    }
+    #rightflowersblog {
+        position: fixed;
+        z-index: -10;
+        top: 0;
+        right: 0;
+        width: 30%;
+    }
+    #maintextsblog {
+        position: relative;
+        left: 80px;
+        width: calc(100% - 80px);
+        height: 100vh;
+    }
+    #linearzagblog {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        z-index: 100;
+        width: 100%;
+        padding: 50px 0;
+        align-items: center;
+    }
+    #zag1blog {
+        position: relative;
+        z-index: 1;
+        font-family: "gg";
+        font-size: 32px;
+        font-weight: 100;
+        width: 90%;
+        text-shadow: 1px 1px 0.5px white;
+    }
+    #pencilonthirdpage {
+        position: relative;
+        z-index: 10;
+        width: 45px;
+    }
+    #textsblog {
+        position: relative;
+        width: 100%;
+    }
+    #squarethirdpage1 {
+        position: relative;
+    }
+    #rowblogmain {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffffbb;
+        width: 90%;
+        border-radius: 25px;
+        padding: 5px;
+        left: 4%;
+        margin-bottom: 15px;
+    }
+    #blogpics {
+        margin-top: 10px;
+        position: relative;
+        width: 300px;
+    }
+    #blogpic1 {
+        position: relative;
+        vertical-align: middle;
+        transition-duration: 0.3s;
+        width: 100%;
+    }
+    #blogpic1:hover {
+        scale: 102%;
+    }
+    #rows2inblog {
+        position: relative;
+        width: 90%;
+    }
+    #zagthirdblog1 {
+        position: relative;
+        display: block;
+        width: calc(100% - 25px);
+        left: 25px;
+        padding: 15px 0;
+        font-family: "alumr";
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #222222;
+        transition-duration: 0.3s;
+    }
+    #zagthirdblog1:hover {
+        color: #000000;
+        scale: 102%;
+    }
+    #textthirdblog1 {
+        font-family: "alumr";
+        position: relative;
+        font-size: 17px;
+        font-weight: 600;
+        text-indent: 30px;
+        padding: 0 15px;
+    }
+    #tagsthirdpageblog {
+        position: relative;
+    }
+    #taglistblog {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+    }
+    #tagoninstructionbutton1 {
+        position: relative;
+        background-color: #b15600e5;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 35px;
+        margin-right: 10px;
+        transition-duration: 0.3s;
+    }
+    #tagoninstructionbutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagonhealthbutton1 {
+        position: relative;
+        background-color: #dc8d17d8;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 35px;
+        margin-right: 10px;
+        transition-duration: 0.3s;
+    }
+    #tagonhealthbutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagonpsyhologybutton1 {
+        position: relative;
+        background-color: #eab93ddc;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 35px;
+        margin-right: 10px;
+        transition-duration: 0.3s;
+    }
+    #tagonpsyhologybutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagonselfdevelopmentbutton1 {
+        position: relative;
+        background-color: #ee6605d5;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 35px;
+        margin-right: 10px;
+        transition-duration: 0.3s;
+    }
+    #tagonselfdevelopmentbutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagoncreativebutton1 {
+        position: relative;
+        background-color: #ad4204dc;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 35px;
+        margin-right: 10px;
+        transition-duration: 0.3s;
+    }
+    #tagoncreativebutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagonpracticebutton1 {
+        position: relative;
+        background-color: #cd450ad3;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 35px;
+        margin-right: 10px;
+        transition-duration: 0.3s;
+    }
+    #tagonpracticebutton1:hover {
+        background-color: #000000c7;
+    }
+    #timedatarows {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    #time1pageblog {
+        position: relative;
+        left: 10px;
+        width: 25px;
+    }
+    #timethirdpageblog1 {
+        font-family: "alumr";
+        position: relative;
+        left: 15px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    #datathirdpageblog1 {
+        font-family: "alumr";
+        position: relative;
+        font-size: 15px;
+        font-weight: 600;
+        left: 10px;
+        width: calc(100% - 10px);
+    }
+}
+
+@media screen and (min-width: 1030px) {
+    .flowersblogpop {
+        list-style: none;
+        width: 33%;
+    }
+    #leftflowersblog {
+        position: fixed;
+        z-index: -10;
+        bottom: 0;
+        width: 30%;
+    }
+    #rightflowersblog {
+        position: fixed;
+        z-index: -10;
+        top: 0;
+        right: 0;
+        width: 30%;
+    }
+    #maintextsblog {
+        position: relative;
+        left: 80px;
+        width: calc(100% - 80px);
+        height: 100vh;
+    }
+    #linearzagblog {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        z-index: 100;
+        width: 100%;
+        padding: 50px 0;
+        align-items: center;
+    }
+    #zag1blog {
+        position: relative;
+        z-index: 1;
+        font-family: "gg";
+        font-size: 42px;
+        font-weight: 200;
+    }
+    #pencilonthirdpage {
+        position: relative;
+        z-index: 10;
+        width: 60px;
+        height: 60px;
+        top: -8px;
+    }
+    #textsblog {
+        position: relative;
+    }
+    #squarethirdpage1 {
+        position: relative;
+    }
+    #rowblogmain {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #ffffffbb;
+        width: 90%;
+        border-radius: 25px;
+        padding: 11px;
+        left: 3%;
+        margin-bottom: 15px;
+    }
+    #blogpic1 {
+        position: relative;
+        vertical-align: middle;
+        transition-duration: 0.3s;
+    }
+    #blogpic1:hover {
+        scale: 102%;
+    }
+    #rows2inblog {
+        position: relative;
+    }
+    #zagthirdblog1 {
+        position: relative;
+        display: block;
+        width: calc(100% - 25px);
+        left: 25px;
+        padding: 15px 0;
+        font-family: "alumr";
+        font-size: 36px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #222222;
+        transition-duration: 0.3s;
+    }
+    #zagthirdblog1:hover {
+        color: #000000;
+        scale: 102%;
+    }
+    #textthirdblog1 {
+        font-family: "alumr";
+        position: relative;
+        font-size: 20px;
+        font-weight: 600;
+        text-indent: 40px;
+        padding: 0 15px;
+    }
+    #tagsthirdpageblog {
+        position: relative;
+    }
+    #taglistblog {
+        position: relative;
+        display: flex;
+        min-width: 100px;
+        flex-direction: row;
+        padding: 15px;
+    }
+    #tagoninstructionbutton1 {
+        position: relative;
+        background-color: #b15600e5;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 35px;
+        margin-right: 10px;
+        transition-duration: 0.3s;
+    }
+    #tagoninstructionbutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagonhealthbutton1 {
+        position: relative;
+        background-color: #dc8d17d8;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 35px;
+        margin-right: 10px;
+        transition-duration: 0.3s;
+    }
+    #tagonhealthbutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagonpsyhologybutton1 {
+        position: relative;
+        background-color: #eab93ddc;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 35px;
+        margin-right: 10px;
+        transition-duration: 0.3s;
+    }
+    #tagonpsyhologybutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagonselfdevelopmentbutton1 {
+        position: relative;
+        background-color: #ee6605d5;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 35px;
+        margin-right: 10px;
+        transition-duration: 0.3s;
+    }
+    #tagonselfdevelopmentbutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagoncreativebutton1 {
+        position: relative;
+        background-color: #ad4204dc;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 35px;
+        margin-right: 10px;
+        transition-duration: 0.3s;
+    }
+    #tagoncreativebutton1:hover {
+        background-color: #000000c7;
+    }
+    #tagonpracticebutton1 {
+        position: relative;
+        background-color: #cd450ad3;
+        text-decoration: none;
+        color: #fff;
+        font-family: "alumr";
+        font-weight: 600;
+        border-radius: 15px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 35px;
+        margin-right: 10px;
+        transition-duration: 0.3s;
+    }
+    #tagonpracticebutton1:hover {
+        background-color: #000000c7;
+    }
+    #timedatarows {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    #time1pageblog {
+        position: relative;
+        left: 10px;
+    }
+    #timethirdpageblog1 {
+        font-family: "alumr";
+        position: relative;
+        left: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #datathirdpageblog1 {
+        font-family: "alumr";
+        position: relative;
+        font-size: 18px;
+        font-weight: 600;
+        left: 10px;
+        width: calc(100% - 10px);
+    }
+}

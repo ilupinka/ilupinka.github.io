@@ -1,0 +1,694 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-image: url("./pictures/background.png"); */
+}
+@font-face {
+    font-family: 'alumr';
+    src: url('./fonts/AlumniSansPinstripe-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'gg';
+    src: url('./fonts/gogol_regular.otf') format('opentype');
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    #backgroundimages {
+        position: fixed;
+        width: 100%;
+        z-index: -10;
+    }
+    #leftflowerswhyonrews {
+        position: fixed;
+        width: 30%;
+        left: 5%;
+    }
+    #rightflowerswhyonrews {
+        position: fixed;
+        width: 40%;
+        bottom: 0;
+        right: 0;
+    }
+    #maininfoonrews {
+        position: relative;
+        width: 90%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 15px;
+        margin-left: 5%;
+    }
+    #tablemainrews {
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #otzyvypos {
+        font-family: 'gg';
+        font-size: 25px;
+        font-weight: 300;
+    }
+    /* #butuprews {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 10;
+    }
+    #buttonuponrews {
+        width: 50px;
+        cursor: pointer;
+    }
+    #butdownrews {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 10;
+    }
+    #buttondownonrews {
+        width: 50px;
+        cursor: pointer;
+    } */
+    #blocksrewson {
+        position: relative;
+        display: flex;
+        text-align: center;
+        height: 87vh;
+        width: 100%;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+    #blockrews1 {
+        position: relative;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+    #ellipse1 {
+        position: relative;
+        left: 0;
+        width: 50px;
+    }
+    #ellipse2 {
+        position: relative;
+        right: 0;
+        width: 50px;
+    }
+    #collavatex1 {
+        position: relative;
+    }
+    #collavatex2 {
+        position: relative;
+    }
+    #avataredit1 {
+        width: 50px;
+    }
+    #avatline1 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        bottom: 0;
+    }
+    #avatline2 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        bottom: 0;
+    }
+    #nameofavs1 {
+        position: relative;
+        bottom: 0;
+        padding-left: 10px;
+        font-family: 'gg';
+        font-weight: 200;
+        font-size: 20px;
+        top: 5px;
+    }
+    #nameofavs2 {
+        position: relative;
+        bottom: 0;
+        padding-right: 10px;
+        font-family: 'gg';
+        font-weight: 200;
+        font-size: 20px;
+        top: 5px;
+    }
+    #blockrews2 {
+        position: relative;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+    #blockrews3 {
+        position: relative;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+    #opisrews1 {
+        position: relative;
+        text-align: left;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 15px;
+        text-indent: 25px;
+        width: 90%;
+        left: -5%;
+    }
+    #opisrews2 {
+        position: relative;
+        text-align: right;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 15px;
+        text-indent: 25px;
+        width: 90%;
+        right: -5%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 519px) {
+    #backgroundimages {
+        position: fixed;
+        width: 100%;
+        z-index: -10;
+    }
+    #leftflowerswhyonrews {
+        position: fixed;
+        width: 30%;
+        left: 5%;
+    }
+    #rightflowerswhyonrews {
+        position: fixed;
+        width: 40%;
+        bottom: 0;
+        right: 0;
+    }
+    #maininfoonrews {
+        position: relative;
+        left: 80px;
+        width: calc(100% - 80px);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #tablemainrews {
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #otzyvypos {
+        font-family: 'gg';
+        font-size: 30px;
+        font-weight: 300;
+    }
+    /* #butuprews {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 10;
+    }
+    #buttonuponrews {
+        width: 50px;
+        cursor: pointer;
+    }
+    #butdownrews {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 10;
+    }
+    #buttondownonrews {
+        width: 50px;
+        cursor: pointer;
+    } */
+    #blocksrewson {
+        position: relative;
+        display: flex;
+        text-align: center;
+        height: 87vh;
+        width: 100%;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+    #blockrews1 {
+        position: relative;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+    #ellipse1 {
+        position: relative;
+        left: 0;
+        width: 70px;
+    }
+    #ellipse2 {
+        position: relative;
+        right: 0;
+        width: 70px;
+    }
+    #collavatex1 {
+        position: relative;
+    }
+    #collavatex2 {
+        position: relative;
+    }
+    #avataredit1 {
+        width: 60px;
+    }
+    #avatline1 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        bottom: 0;
+    }
+    #avatline2 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        bottom: 0;
+    }
+    #nameofavs1 {
+        position: relative;
+        bottom: 0;
+        padding-left: 10px;
+        font-family: 'gg';
+        font-weight: 200;
+        font-size: 25px;
+        top: 5px;
+    }
+    #nameofavs2 {
+        position: relative;
+        bottom: 0;
+        padding-right: 10px;
+        font-family: 'gg';
+        font-weight: 200;
+        font-size: 25px;
+        top: 5px;
+    }
+    #blockrews2 {
+        position: relative;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+    #blockrews3 {
+        position: relative;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+    #opisrews1 {
+        position: relative;
+        text-align: left;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+        text-indent: 25px;
+        width: 90%;
+        left: -5%;
+    }
+    #opisrews2 {
+        position: relative;
+        text-align: right;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+        text-indent: 25px;
+        width: 90%;
+        right: -5%;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 1029px) {
+    #backgroundimages {
+        position: fixed;
+        width: 100%;
+        z-index: -10;
+    }
+    #leftflowerswhyonrews {
+        position: fixed;
+        width: 30%;
+        left: 5%;
+    }
+    #rightflowerswhyonrews {
+        position: fixed;
+        width: 40%;
+        bottom: 0;
+        right: 0;
+    }
+    #maininfoonrews {
+        position: relative;
+        left: 80px;
+        width: calc(100% - 80px);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #tablemainrews {
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #otzyvypos {
+        font-family: 'gg';
+        font-size: 40px;
+        font-weight: 300;
+    }
+    /* #butuprews {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 10;
+    }
+    #buttonuponrews {
+        width: 50px;
+        cursor: pointer;
+    }
+    #butdownrews {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 10;
+    }
+    #buttondownonrews {
+        width: 50px;
+        cursor: pointer;
+    } */
+    #blocksrewson {
+        position: relative;
+        display: flex;
+        text-align: center;
+        height: 87vh;
+        width: 100%;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+    #blockrews1 {
+        position: relative;
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+    #ellipse1 {
+        position: relative;
+        left: 0;
+        width: 100px;
+    }
+    #ellipse2 {
+        position: relative;
+        right: 0;
+        width: 100px;
+    }
+    #collavatex1 {
+        position: relative;
+    }
+    #collavatex2 {
+        position: relative;
+    }
+    #avataredit1 {
+        width: 60px;
+    }
+    #avatline1 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        bottom: 0;
+    }
+    #avatline2 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        bottom: 0;
+    }
+    #nameofavs1 {
+        position: relative;
+        bottom: 0;
+        padding-left: 10px;
+        font-family: 'gg';
+        font-weight: 200;
+        font-size: 25px;
+        top: 5px;
+    }
+    #nameofavs2 {
+        position: relative;
+        bottom: 0;
+        padding-right: 10px;
+        font-family: 'gg';
+        font-weight: 200;
+        font-size: 25px;
+        top: 5px;
+    }
+    #blockrews2 {
+        position: relative;
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+    #blockrews3 {
+        position: relative;
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+    #opisrews1 {
+        position: relative;
+        text-align: left;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+        text-indent: 25px;
+        width: 90%;
+        left: -5%;
+    }
+    #opisrews2 {
+        position: relative;
+        text-align: right;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+        text-indent: 25px;
+        width: 90%;
+        right: -5%;
+    }
+}
+
+@media screen and (min-width: 1030px) {
+    #backgroundimages {
+        position: fixed;
+        width: 100%;
+        z-index: -10;
+    }
+    #leftflowerswhyonrews {
+        position: fixed;
+        width: 30%;
+        left: 5%;
+    }
+    #rightflowerswhyonrews {
+        position: fixed;
+        width: 40%;
+        bottom: 0;
+        right: 0;
+    }
+    #maininfoonrews {
+        position: relative;
+        left: 80px;
+        width: calc(100% - 80px);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #tablemainrews {
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #otzyvypos {
+        font-family: 'gg';
+        font-size: 50px;
+        font-weight: 300;
+    }
+    /* #butuprews {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 10;
+    }
+    #buttonuponrews {
+        width: 50px;
+        cursor: pointer;
+    }
+    #butdownrews {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 10;
+    }
+    #buttondownonrews {
+        width: 50px;
+        cursor: pointer;
+    } */
+    #blocksrewson {
+        position: relative;
+        display: flex;
+        text-align: center;
+        height: 87vh;
+        width: 100%;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+    #blockrews1 {
+        position: relative;
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+    #ellipse1 {
+        position: relative;
+        left: 0;
+        width: 200px;
+    }
+    #ellipse2 {
+        position: relative;
+        right: 0;
+        width: 200px;
+    }
+    #collavatex1 {
+        position: relative;
+    }
+    #collavatex2 {
+        position: relative;
+    }
+    #avatline1 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        bottom: 0;
+    }
+    #avatline2 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        bottom: 0;
+    }
+    #nameofavs1 {
+        position: relative;
+        bottom: 0;
+        padding-left: 10px;
+        font-family: 'gg';
+        font-weight: 200;
+        font-size: 35px;
+        top: 5px;
+    }
+    #nameofavs2 {
+        position: relative;
+        bottom: 0;
+        padding-right: 10px;
+        font-family: 'gg';
+        font-weight: 200;
+        font-size: 35px;
+        top: 5px;
+    }
+    #blockrews2 {
+        position: relative;
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+    #blockrews3 {
+        position: relative;
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+    #opisrews1 {
+        position: relative;
+        text-align: left;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 25px;
+        text-indent: 25px;
+        width: 90%;
+        left: -5%;
+    }
+    #opisrews2 {
+        position: relative;
+        text-align: right;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 25px;
+        text-indent: 25px;
+        width: 90%;
+        right: -5%;
+    }
+}

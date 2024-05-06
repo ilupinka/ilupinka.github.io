@@ -1,0 +1,1938 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-image: url("./pictures/background.png"); */
+}
+@font-face {
+    font-family: 'alumr';
+    src: url('./fonts/AlumniSansPinstripe-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'gg';
+    src: url('./fonts/gogol_regular.otf') format('opentype');
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    #mainspaceonlogin {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        z-index: -100;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    #mainelemonlogin {
+        position: relative;
+        background-color: white;
+        height: 80vh;
+        width: 90%;
+        border-radius: 30px;
+        display: flex;
+    }
+    #leftchapterlogin {
+        position: relative;
+        background-color: white;
+        width: 90%;
+        height: 80vh;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    #rightchapterlogin {
+        position: relative;
+        background-color: #BF9BFC;
+        display: flex;
+        width: 90%;
+        height: 80vh;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    #sirenimage {
+        width: 100%;
+    }
+    #whiteblockleft {
+        position: absolute;
+        width: 80%;
+        height: 70vh;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.833);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #vhodlogin {
+        font-family: "alumr";
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #labelfornamelogin {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #nameofuserlogin {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #labelforpasswordlogin {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #passwordofuserlogin {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #loginlogin {
+        list-style: none;
+        padding-top: 25px;
+        width: 300px;
+    }
+    #loginlogin li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #bf9bfc69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #loginlogin li::before {
+        content: "";
+        position: absolute;
+        background-color: #BF9BFC;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #loginlogin li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #loginlogin li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    #textrightloginreg {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #registernameright {
+        font-family: "alumr";
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+        width: 90%;
+    }
+    #opisloginright {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 200;
+        padding-top: 25px;
+        width: 50%;
+        color: white;
+    }
+    #regregchangeright {
+        padding-top: 25px;
+        width: 300px;
+        cursor: pointer;
+    }
+    #regregchangeright li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #ffffff69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #regregchangeright li::before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #regregchangeright li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #regregchangeright li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    #leftchapterreg {
+        position: relative;
+        background-color: #BF9BFC;
+        display: flex;
+        width: 90%;
+        height: 80vh;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #rightchapterreg {
+        position: relative;
+        background-color: white;
+        width: 90%;
+        height: 80vh;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    #sirenimagereg {
+        width: 100%;
+        transform: scale(-1,1);
+    }
+    #whiteblockleftreg {
+        position: absolute;
+        width: 80%;
+        height: 70vh;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.833);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #vhodreg {
+        font-family: "alumr";
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #labelfornamereg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #nameofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #labelforemailreg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #emailofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #labelforpasswordreg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #passwordofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #labelforpassword2reg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #password2ofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #regreg {
+        list-style: none;
+        padding-top: 25px;
+        width: 300px;
+    }
+    #regreg li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #bf9bfc69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #regreg li::before {
+        content: "";
+        position: absolute;
+        background-color: #BF9BFC;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #regreg li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #regreg li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    #textrightregreg {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #registernamerightreg {
+        font-family: "alumr";
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+        width: 90%;
+    }
+    #opisregright {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 200;
+        padding-top: 25px;
+        width: 50%;
+        color: white;
+    }
+    #regregchangerightreg {
+        padding-top: 25px;
+        width: 300px;
+        cursor: pointer;
+    }
+    #regregchangerightreg li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #ffffff69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #regregchangerightreg li::before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #regregchangerightreg li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #regregchangerightreg li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    .firstpagelogin.open {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0;
+        animation: animefirstpageopen 1s forwards;
+    }
+    @keyframes animefirstpageopen {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .secondpagelogin.open {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0;
+        animation: animefirstpageopen 1s forwards;
+    }
+    @keyframes animesecondpageopen {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .firstpagelogin.close {
+        display: none;
+        opacity: 0;
+        animation: animefirstpageclose 1s forwards;
+    }
+    @keyframes animefirstpageclose {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .secondpagelogin.close {
+        display: none;
+        opacity: 0;
+        animation: animesecondpageclose 1s forwards;
+    }
+    @keyframes animesecondpageclose {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+}
+@media (min-width: 481px) and (max-width: 649px) {
+    #mainspaceonlogin {
+        position: absolute;
+        right: 0;
+        width: calc(100% - 80px);
+        z-index: -100;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    #mainelemonlogin {
+        position: relative;
+        background-color: white;
+        height: 80vh;
+        width: 90%;
+        border-radius: 30px;
+        display: flex;
+    }
+    #leftchapterlogin {
+        position: relative;
+        background-color: white;
+        width: 90%;
+        height: 80vh;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #rightchapterlogin {
+        position: relative;
+        background-color: #BF9BFC;
+        display: flex;
+        width: 90%;
+        height: 80vh;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    #sirenimage {
+        width: 100%;
+    }
+    #whiteblockleft {
+        position: absolute;
+        width: 80%;
+        height: 70vh;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.833);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #vhodlogin {
+        font-family: "alumr";
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #labelfornamelogin {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #nameofuserlogin {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #labelforpasswordlogin {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #passwordofuserlogin {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #loginlogin {
+        list-style: none;
+        padding-top: 25px;
+        width: 300px;
+    }
+    #loginlogin li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #bf9bfc69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #loginlogin li::before {
+        content: "";
+        position: absolute;
+        background-color: #BF9BFC;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #loginlogin li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #loginlogin li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    #textrightloginreg {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #registernameright {
+        font-family: "alumr";
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+        width: 90%;
+    }
+    #opisloginright {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 200;
+        padding-top: 25px;
+        width: 50%;
+        color: white;
+    }
+    #regregchangeright {
+        padding-top: 25px;
+        width: 300px;
+        cursor: pointer;
+    }
+    #regregchangeright li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #ffffff69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #regregchangeright li::before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #regregchangeright li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #regregchangeright li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    #leftchapterreg {
+        position: relative;
+        background-color: #BF9BFC;
+        display: flex;
+        width: 90%;
+        height: 80vh;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #rightchapterreg {
+        position: relative;
+        background-color: white;
+        width: 90%;
+        height: 80vh;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #sirenimagereg {
+        width: 100%;
+        transform: scale(-1,1);
+    }
+    #whiteblockleftreg {
+        position: absolute;
+        width: 80%;
+        height: 70vh;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.833);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #vhodreg {
+        font-family: "alumr";
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #labelfornamereg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #nameofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #labelforemailreg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #emailofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #labelforpasswordreg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #passwordofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #labelforpassword2reg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #password2ofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #regreg {
+        list-style: none;
+        padding-top: 25px;
+        width: 300px;
+    }
+    #regreg li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #bf9bfc69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #regreg li::before {
+        content: "";
+        position: absolute;
+        background-color: #BF9BFC;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #regreg li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #regreg li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    #textrightregreg {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #registernamerightreg {
+        font-family: "alumr";
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+        width: 90%;
+    }
+    #opisregright {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 200;
+        padding-top: 25px;
+        width: 50%;
+        color: white;
+    }
+    #regregchangerightreg {
+        padding-top: 25px;
+        width: 300px;
+        cursor: pointer;
+    }
+    #regregchangerightreg li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #ffffff69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #regregchangerightreg li::before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #regregchangerightreg li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #regregchangerightreg li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    .firstpagelogin.open {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0;
+        animation: animefirstpageopen 1s forwards;
+    }
+    @keyframes animefirstpageopen {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .secondpagelogin.open {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0;
+        animation: animefirstpageopen 1s forwards;
+    }
+    @keyframes animesecondpageopen {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .firstpagelogin.close {
+        display: none;
+        opacity: 0;
+        animation: animefirstpageclose 1s forwards;
+    }
+    @keyframes animefirstpageclose {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .secondpagelogin.close {
+        display: none;
+        opacity: 0;
+        animation: animesecondpageclose 1s forwards;
+    }
+    @keyframes animesecondpageclose {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+}
+@media (min-width: 650px) and (max-width: 1029px) {
+    #mainspaceonlogin {
+        position: absolute;
+        right: 0;
+        width: calc(100% - 80px);
+        z-index: -100;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #mainelemonlogin {
+        position: relative;
+        background-color: white;
+        height: 90vh;
+        width: 80%;
+        border-radius: 30px;
+        display: flex;
+    }
+    #leftchapterlogin {
+        position: relative;
+        background-color: white;
+        width: 50%;
+        height: 90vh;
+        border-radius: 30px 0 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #rightchapterlogin {
+        position: relative;
+        background-color: #BF9BFC;
+        display: flex;
+        width: 50%;
+        height: 90vh;
+        border-radius: 0 30px 30px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    #sirenimage {
+        width: 160%;
+        margin-left: 30%;
+    }
+    #whiteblockleft {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.833);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #vhodlogin {
+        font-family: "alumr";
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #labelfornamelogin {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #nameofuserlogin {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #labelforpasswordlogin {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #passwordofuserlogin {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #loginlogin {
+        list-style: none;
+        padding-top: 25px;
+        width: 300px;
+    }
+    #loginlogin li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #bf9bfc69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #loginlogin li::before {
+        content: "";
+        position: absolute;
+        background-color: #BF9BFC;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #loginlogin li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #loginlogin li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    #textrightloginreg {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #registernameright {
+        font-family: "alumr";
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+        width: 90%;
+    }
+    #opisloginright {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 200;
+        padding-top: 25px;
+        width: 50%;
+        color: white;
+    }
+    #regregchangeright {
+        padding-top: 25px;
+        width: 300px;
+        cursor: pointer;
+    }
+    #regregchangeright li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #ffffff69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #regregchangeright li::before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #regregchangeright li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #regregchangeright li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    #leftchapterreg {
+        position: relative;
+        background-color: #BF9BFC;
+        display: flex;
+        width: 50%;
+        height: 90vh;
+        border-radius: 0 30px 30px 0;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+    #rightchapterreg {
+        position: relative;
+        background-color: white;
+        width: 50%;
+        height: 90vh;
+        border-radius: 30px 0 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #sirenimagereg {
+        width: 160%;
+        margin-left: -30%;
+        transform: scale(-1,1);
+    }
+    #whiteblockleftreg {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.833);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #vhodreg {
+        font-family: "alumr";
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #labelfornamereg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #nameofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #labelforemailreg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #emailofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #labelforpasswordreg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #passwordofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #labelforpassword2reg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #password2ofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #regreg {
+        list-style: none;
+        padding-top: 25px;
+        width: 300px;
+    }
+    #regreg li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #bf9bfc69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #regreg li::before {
+        content: "";
+        position: absolute;
+        background-color: #BF9BFC;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #regreg li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #regreg li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    #textrightregreg {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #registernamerightreg {
+        font-family: "alumr";
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+        width: 90%;
+    }
+    #opisregright {
+        position: relative;
+        font-family: 'gg';
+        font-size: 20px;
+        font-weight: 200;
+        padding-top: 25px;
+        width: 50%;
+        color: white;
+    }
+    #regregchangerightreg {
+        padding-top: 25px;
+        width: 300px;
+        cursor: pointer;
+    }
+    #regregchangerightreg li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #ffffff69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #regregchangerightreg li::before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #regregchangerightreg li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #regregchangerightreg li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    .firstpagelogin.open {
+        display: flex;
+        width: 100%;
+        opacity: 0;
+        animation: animefirstpageopen 1s forwards;
+    }
+    @keyframes animefirstpageopen {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .secondpagelogin.open {
+        display: flex;
+        width: 100%;
+        opacity: 0;
+        animation: animesecondpageopen 1s forwards;
+    }
+    @keyframes animesecondpageopen {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .firstpagelogin.close {
+        display: none;
+        opacity: 0;
+        animation: animefirstpageclose 1s forwards;
+    }
+    @keyframes animefirstpageclose {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .secondpagelogin.close {
+        display: none;
+        opacity: 0;
+        animation: animesecondpageclose 1s forwards;
+    }
+    @keyframes animesecondpageclose {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+}
+@media screen and (min-width: 1030px) {
+    #mainspaceonlogin {
+        position: absolute;
+        right: 0;
+        width: calc(100% - 80px);
+        z-index: -100;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #mainelemonlogin {
+        position: relative;
+        background-color: white;
+        height: 90vh;
+        width: 80%;
+        border-radius: 30px;
+        display: flex;
+    }
+    #leftchapterlogin {
+        position: relative;
+        background-color: white;
+        width: 50%;
+        height: 90vh;
+        border-radius: 30px 0 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #rightchapterlogin {
+        position: relative;
+        background-color: #BF9BFC;
+        display: flex;
+        width: 50%;
+        height: 90vh;
+        border-radius: 0 30px 30px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    #sirenimage {
+        width: 160%;
+        margin-left: 30%;
+    }
+    #whiteblockleft {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.833);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #vhodlogin {
+        font-family: "alumr";
+        font-size: 50px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #labelfornamelogin {
+        position: relative;
+        font-family: 'gg';
+        font-size: 25px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #nameofuserlogin {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 25px;
+    }
+    #labelforpasswordlogin {
+        position: relative;
+        font-family: 'gg';
+        font-size: 25px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #passwordofuserlogin {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 25px;
+    }
+    #loginlogin {
+        list-style: none;
+        padding-top: 25px;
+        width: 300px;
+    }
+    #loginlogin li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #bf9bfc69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #loginlogin li::before {
+        content: "";
+        position: absolute;
+        background-color: #BF9BFC;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #loginlogin li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #loginlogin li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 25px;
+        position: relative;
+        z-index: 2;
+    }
+    #textrightloginreg {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #registernameright {
+        font-family: "alumr";
+        font-size: 50px;
+        font-weight: 600;
+        color: white;
+        width: 90%;
+    }
+    #opisloginright {
+        position: relative;
+        font-family: 'gg';
+        font-size: 25px;
+        font-weight: 200;
+        padding-top: 25px;
+        width: 50%;
+        color: white;
+    }
+    #regregchangeright {
+        padding-top: 25px;
+        width: 300px;
+        cursor: pointer;
+    }
+    #regregchangeright li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #ffffff69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #regregchangeright li::before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #regregchangeright li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #regregchangeright li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 25px;
+        position: relative;
+        z-index: 2;
+    }
+    #leftchapterreg {
+        position: relative;
+        background-color: #BF9BFC;
+        display: flex;
+        width: 50%;
+        height: 90vh;
+        border-radius: 0 30px 30px 0;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+    #rightchapterreg {
+        position: relative;
+        background-color: white;
+        width: 50%;
+        height: 90vh;
+        border-radius: 30px 0 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #sirenimagereg {
+        width: 160%;
+        margin-left: -30%;
+        transform: scale(-1,1);
+    }
+    #whiteblockleftreg {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.833);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #vhodreg {
+        font-family: "alumr";
+        font-size: 50px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #labelfornamereg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 25px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #nameofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 25px;
+    }
+    #labelforemailreg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 25px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #emailofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 25px;
+    }
+    #labelforpasswordreg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 25px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #passwordofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 25px;
+    }
+    #labelforpassword2reg {
+        position: relative;
+        font-family: 'gg';
+        font-size: 25px;
+        font-weight: 500;
+        padding-top: 25px;
+    }
+    #password2ofuserreg {
+        border: none;
+        border-radius: 10px;
+        height: 5vh;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+        text-align: center;
+        font-family: 'alumr';
+        font-weight: 600;
+        font-size: 25px;
+    }
+    #regreg {
+        list-style: none;
+        padding-top: 25px;
+        width: 300px;
+    }
+    #regreg li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #bf9bfc69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #regreg li::before {
+        content: "";
+        position: absolute;
+        background-color: #BF9BFC;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #regreg li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #regreg li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 25px;
+        position: relative;
+        z-index: 2;
+    }
+    #textrightregreg {
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #registernamerightreg {
+        font-family: "alumr";
+        font-size: 50px;
+        font-weight: 600;
+        color: white;
+        width: 90%;
+    }
+    #opisregright {
+        position: relative;
+        font-family: 'gg';
+        font-size: 25px;
+        font-weight: 200;
+        padding-top: 25px;
+        width: 50%;
+        color: white;
+    }
+    #regregchangerightreg {
+        padding-top: 25px;
+        width: 300px;
+        cursor: pointer;
+    }
+    #regregchangerightreg li {
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin: 15px 0;
+        position: relative;
+        background-color: #ffffff69;
+        border-radius: 5px 10px 10px 5px;
+        overflow: hidden;
+        width: 60%;
+        height: 60px;
+    }
+    #regregchangerightreg li::before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 5px 15px 15px 5px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        transition: 0.3s all ease-in-out;
+    }
+    #regregchangerightreg li:hover::before {
+        border-radius: 5px 10px 10px 5px;
+        width: 110%;
+    }
+    #regregchangerightreg li a {
+        display: grid;
+        place-items: center;
+        height: 60px;
+        text-decoration: none;
+        color: #000;
+        font-family: "alumr";
+        font-weight: 600;
+        font-size: 25px;
+        position: relative;
+        z-index: 2;
+    }
+    .firstpagelogin.open {
+        display: flex;
+        width: 100%;
+        opacity: 0;
+        animation: animefirstpageopen 1s forwards;
+    }
+    @keyframes animefirstpageopen {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .secondpagelogin.open {
+        display: flex;
+        width: 100%;
+        opacity: 0;
+        animation: animesecondpageopen 1s forwards;
+    }
+    @keyframes animesecondpageopen {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .firstpagelogin.close {
+        display: none;
+        opacity: 0;
+        animation: animefirstpageclose 1s forwards;
+    }
+    @keyframes animefirstpageclose {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .secondpagelogin.close {
+        display: none;
+        opacity: 0;
+        animation: animesecondpageclose 1s forwards;
+    }
+    @keyframes animesecondpageclose {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+}
