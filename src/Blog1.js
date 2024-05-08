@@ -1,13 +1,13 @@
 import React, { Component } from 'react' 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './blog1.css'
-import leftflowers from "./pictures/leftflowersblog.png"
-import rightflowers from "./pictures/rightflowersblog.png"
-import pencil from './pictures/pencil.png'
-import blogpic1 from './pictures/blogpic1.png'
-import blogpic2 from './pictures/blogpic2.png'
-import blogpic3 from './pictures/blogpic3.png'
-import timeclock from './pictures/time.png'
+import leftflowers from "./pictures/leftflowersblog.webp"
+import rightflowers from "./pictures/rightflowersblog.webp"
+import pencil from './pictures/pencil.webp'
+import blogpic1 from './pictures/blogpic1.webp'
+import blogpic2 from './pictures/blogpic2.webp'
+import blogpic3 from './pictures/blogpic3.webp'
+import timeclock from './pictures/time.webp'
 export default class Home extends Component {
     render() {
         return (

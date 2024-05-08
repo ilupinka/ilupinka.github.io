@@ -1,6 +1,6 @@
 import './sidebar.css'
-import user from "./pictures/login.png"
-import logout from "./pictures/logout.png"
+import user from "./pictures/login.webp"
+import logout from "./pictures/logout.webp"
 
 import { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'

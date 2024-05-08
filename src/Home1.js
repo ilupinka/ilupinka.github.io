@@ -1,8 +1,8 @@
 import React, { Component } from 'react' 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './home1.css'
-import leftflowers from "./pictures/leftflowerswhy.png"
-import rightflowers from "./pictures/rightflowerswhy.png"
+import leftflowers from "./pictures/leftflowerswhy.webp"
+import rightflowers from "./pictures/rightflowerswhy.webp"
 
 export default class Home extends Component {
     render() {

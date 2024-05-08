@@ -1,9 +1,9 @@
 import './sidebar.css'
-import question from "./pictures/question.png"
-import pig from "./pictures/pig.png"
-import blog from "./pictures/blog.png"
-import comment from "./pictures/comment.png"
-import login from "./pictures/login.png"
+import question from "./pictures/question.webp"
+import pig from "./pictures/pig.webp"
+import blog from "./pictures/blog.webp"
+import comment from "./pictures/comment.webp"
+import login from "./pictures/login.webp"
 
 import { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'

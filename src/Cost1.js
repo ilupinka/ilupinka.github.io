@@ -1,10 +1,10 @@
 import React, { Component } from 'react' 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './cost1.css'
-import cost1 from "./pictures/costgroup1.png"
-import cost2 from "./pictures/costgroup2.png"
-import cost3 from "./pictures/costgroup3.png"
-import free from "./pictures/free.png"
+import cost1 from "./pictures/costgroup1.webp"
+import cost2 from "./pictures/costgroup2.webp"
+import cost3 from "./pictures/costgroup3.webp"
+import free from "./pictures/free.webp"
 export default class Home extends Component {
     render() {
         return (

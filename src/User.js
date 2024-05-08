@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import { useState } from "react"
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './user.css'
-import backy from "./pictures/yellowuser.png"
-import menu from "./pictures/menu.png"
-import menuclose from "./pictures/menuclose.png"
-import research from "./pictures/research.png"
-import leftcal from "./pictures/leftcal.png"
-import rightcal from "./pictures/rightcal.png"
-import littleuser from "./pictures/littleuser.png"
+import backy from "./pictures/yellowuser.webp"
+import menu from "./pictures/menu.webp"
+import menuclose from "./pictures/menuclose.webp"
+import research from "./pictures/research.webp"
+import leftcal from "./pictures/leftcal.webp"
+import rightcal from "./pictures/rightcal.webp"
+import littleuser from "./pictures/littleuser.webp"
 export default class Home extends Component {
     render() {
         return (

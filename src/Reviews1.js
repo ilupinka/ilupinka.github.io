@@ -1,12 +1,12 @@
 import React, { Component } from 'react' 
 import './reviews.css'
-import rightflowers from "./pictures/azalia.png"
-import leftflowers from "./pictures/rododendron.png"
-import coms1 from "./pictures/coms1.png"
-import coms2 from "./pictures/coms2.png"
-import avs1 from "./pictures/avs1.png"
-import avs2 from "./pictures/avs2.png"
-import avs3 from "./pictures/avs3.png"
+import rightflowers from "./pictures/azalia.webp"
+import leftflowers from "./pictures/rododendron.webp"
+import coms1 from "./pictures/coms1.webp"
+import coms2 from "./pictures/coms2.webp"
+import avs1 from "./pictures/avs1.webp"
+import avs2 from "./pictures/avs2.webp"
+import avs3 from "./pictures/avs3.webp"
 export default class Home extends Component {
     render() {
         return (

@@ -1,10 +1,10 @@
 import { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './addnote.css'
-import lflow from "./pictures/flownotl.png"
-import rflow from "./pictures/flownotr.png"
-import del from "./pictures/delete.png"
-import sav from "./pictures/save.png"
+import lflow from "./pictures/flownotl.webp"
+import rflow from "./pictures/flownotr.webp"
+import del from "./pictures/delete.webp"
+import sav from "./pictures/save.webp"
 export default class Home extends Component {
     render() {
         return (

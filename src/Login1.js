@@ -3,7 +3,7 @@ import { ProfileContext } from './ProfileProvider';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './login.css'
 import Leftbar from "./leftbar";
-import siren from "./pictures/siren.png";
+import siren from "./pictures/siren.webp";
 
 export default function Login1 () {
     const {userId, setUserId} = useContext(ProfileContext);

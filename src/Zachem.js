@@ -1,13 +1,13 @@
 import React, { Component } from 'react' 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './zachem.css'
-import samovyr from "./pictures/samovyr.jpg"
-import samsam from "./pictures/samsam.jpeg"
-import samopoz from "./pictures/samopoz.png"
-import picforcit1 from "./pictures/flowersforstate1.png"
-import picforcit2 from "./pictures/flowersforstate2.png"
-import blogpic1 from './pictures/backimageblogzachem.jpg'
-import timeclock from './pictures/time.png'
+import samovyr from "./pictures/samovyr.webp"
+import samsam from "./pictures/samsam.webp"
+import samopoz from "./pictures/samopoz.webp"
+import picforcit1 from "./pictures/flowersforstate1.webp"
+import picforcit2 from "./pictures/flowersforstate2.webp"
+import blogpic1 from './pictures/backimageblogzachem.webp'
+import timeclock from './pictures/time.webp'
 export default class Home extends Component {
     render() {
         return (

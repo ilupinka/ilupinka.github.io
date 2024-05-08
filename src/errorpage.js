@@ -1,7 +1,7 @@
 import { useRouteError } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import "./errorpage.css";
-import backflo from "./pictures/oopsbackcenter.png"
+import backflo from "./pictures/oopsbackcenter.webp"
 import Home from "./Home1";
 
 export default function ErrorPage() {
