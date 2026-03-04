@@ -1,28 +1,34 @@
-const cursor = document.querySelector('.custom-cursor');
-const outline = document.querySelector('.custom-cursor-outline');
-const links = document.querySelectorAll('a, button, .proj-link, .nav-btn');
+const isMouse = window.matchMedia("(pointer: fine)").matches;
 
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-    
-    outline.style.left = e.clientX + 'px';
-    outline.style.top = e.clientY + 'px';
-});
+if (isMouse) {
+    const cursor = document.querySelector('.custom-cursor');
+    const outline = document.querySelector('.custom-cursor-outline');
+    const links = document.querySelectorAll('a, button, .proj-link, .nav-btn');
 
-links.forEach(link => {
-    link.addEventListener('mouseenter', () => {
-        cursor.classList.add('cursor-hover');
-        outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-        outline.style.borderColor = '#fff';
-    });
-    
-    link.addEventListener('mouseleave', () => {
-        cursor.classList.remove('cursor-hover');
-        outline.style.transform = 'translate(-50%, -50%) scale(1)';
-        outline.style.borderColor = 'rgba(0, 255, 0, 0.5)';
-    });
-});
+    if (cursor && outline) {
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            outline.style.left = e.clientX + 'px';
+            outline.style.top = e.clientY + 'px';
+        });
+
+        links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                cursor.classList.add('cursor-hover');
+                outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                outline.style.borderColor = '#fff';
+            });
+            
+            link.addEventListener('mouseleave', () => {
+                cursor.classList.remove('cursor-hover');
+                outline.style.transform = 'translate(-50%, -50%) scale(1)';
+                outline.style.borderColor = 'rgba(0, 255, 0, 0.5)';
+            });
+        });
+    }
+}
 
 function startLiveClock() {
     const timeMain = document.getElementById('time-main');
