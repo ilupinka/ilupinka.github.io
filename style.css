@@ -772,7 +772,7 @@ h1 {
 
 .clock-display {
     font-size: 1.8rem;
-    font-family: 'Courier New', monospace;
+    font-family: 'cour';
     color: #0f0;
     text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
@@ -785,7 +785,7 @@ h1 {
 .date-display {
     font-size: 1.2rem;
     color: #0f0;
-    font-family: 'Courier New', monospace;
+    font-family: 'cour';
 }
 
 .status-indicator {
