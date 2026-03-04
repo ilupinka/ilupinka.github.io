@@ -2,6 +2,11 @@
     cursor: none !important;
 }
 
+@font-face {
+    font-family: 'cour';
+    src: url('fonts/cour.ttf') format('truetype');
+}
+
 .tv-btn, 
 .tv-btn *, 
 button, 
@@ -59,7 +64,7 @@ body {
     width: 100vw;
     overflow: hidden;
     background-color: #333;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'cour';
 }
 
 .tv-container {
