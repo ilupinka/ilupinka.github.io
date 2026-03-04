@@ -58,19 +58,36 @@ function showContent(contentId, buttonElement) {
     const screen = document.getElementById('tvScreen');
     if (screen.classList.contains('off')) return;
 
+    // 1. Скрываем всё
     const contents = document.querySelectorAll('.content');
     contents.forEach(content => content.classList.remove('active'));
 
+    // 2. Снимаем подсветку со всех кнопок
     const buttons = document.querySelectorAll('.tv-btn:not(.power-btn)');
     buttons.forEach(btn => btn.classList.remove('pressed'));
 
+    // 3. Показываем нужный контент
     const targetContent = document.getElementById(contentId);
     if (targetContent) {
         targetContent.classList.add('active');
+
+        // 4. Спец-логика для матрицы
+        if (contentId === 'contacts') {
+            setTimeout(() => {
+                const canvas = document.getElementById('matrix-canvas');
+                if (canvas && window.refreshMatrix) {
+                    window.refreshMatrix(); 
+                }
+            }, 50);
+        }
+
+        // 5. Подсвечиваем правильную кнопку
         if (buttonElement) {
             buttonElement.classList.add('pressed');
         } else {
-            document.querySelector('.tv-btn:not(.power-btn)').classList.add('pressed');
+            // Ищем кнопку, у которой в onclick прописан именно этот contentId
+            const btn = document.querySelector(`.tv-btn[onclick*="${contentId}"]`);
+            if (btn) btn.classList.add('pressed');
         }
     }
 }
@@ -94,3 +111,59 @@ function togglePower() {
         showContent('home');
     }
 }
+
+function initMatrix() {
+    const canvas = document.getElementById('matrix-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    let fontSize = 12;
+    let columns = 0;
+    let drops = [];
+
+    function resetMatrix() {
+        canvas.width = canvas.parentElement.offsetWidth;
+        canvas.height = canvas.parentElement.offsetHeight;
+        
+        // Пересчитываем количество столбцов при каждом изменении размера
+        columns = Math.floor(canvas.width / fontSize);
+        // Создаем новый массив капель, если он пустой или изменился размер
+        drops = new Array(columns).fill(1);
+    }
+
+    resetMatrix();
+    // Привязываем пересчет к событию изменения окна
+    window.addEventListener('resize', resetMatrix);
+
+    function draw() {
+        // Если вдруг массив пустой (экран был скрыт), пробуем пересчитать
+        if (drops.length === 0 && canvas.parentElement.offsetWidth > 0) {
+            resetMatrix();
+        }
+
+        ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = "#0f0";
+        ctx.font = fontSize + "px monospace";
+
+        for (let i = 0; i < drops.length; i++) {
+            const text = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZｦｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿ".charAt(
+                Math.floor(Math.random() * 52)
+            );
+            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+            if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                drops[i] = 0;
+            }
+            drops[i]++;
+        }
+    }
+
+    setInterval(draw, 50);
+
+    // Добавляем возможность вызвать пересчет извне
+    window.refreshMatrix = resetMatrix;
+}
+
+initMatrix();

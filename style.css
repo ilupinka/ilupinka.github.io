@@ -947,6 +947,48 @@ h1 {
     to { height: 25px; opacity: 1; }
 }
 
+#contacts.active {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content.active:not(#contacts) {
+    display: block;
+}
+
+.contacts-grid {
+    flex-shrink: 0;
+}
+
+.matrix-background-bottom {
+    position: relative;
+    margin-top: 20px;
+    border-top: 1px solid rgba(0, 255, 0, 0.2);
+    overflow: hidden;
+    flex-grow: 0.8;
+    width: 100%;
+    background: black;
+}
+
+#matrix-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+
+.matrix-overlay-text {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 0.6rem;
+    color: rgba(0, 255, 0, 0.3);
+    font-family: monospace;
+}
+
 @media (max-width: 768px) {
     .tv-container {
         padding: 10px;
